@@ -1,0 +1,26 @@
+{
+  "required": false,
+  "minVersion": "0.8.5",
+  "package": "com.combatweevil886.smoothsailing.mixin",
+  "plugin": "com.combatweevil886.smoothsailing.mixin.SmoothSailingMixinPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "smoothsailing.refmap.json",
+  "mixins": [
+    "EngineBlockEntityMixin",
+    "EngineBlockMixin",
+    "EurekaShipControlMixin",
+    "FloaterBlockMixin",
+    "ShipAssemblerMixin",
+    "ShipHelmBlockEntityMixin",
+    "ShipHelmBlockMixin",
+    "ShipHelmScreenMenuMixin",
+    "StabilizeKtMixin"
+  ],
+  "client": [
+    "client.ShipHelmBlockEntityRendererMixin",
+    "client.WheelModelsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

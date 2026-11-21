@@ -1,0 +1,55 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="https://github.com/Combatweevil886/Eurkea-Addon/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+description='''${mod_description}
+
+Fixes and guards for Eureka! Ships on Valkyrien Skies 2:
+ - Physics guard: blocks NaN/infinite forces, clamps runaway thrust, shields the physics thread from Eureka exceptions.
+ - Config sanitizer: clamps Eureka (and Eureka Tweaks) values that would divide by zero.
+ - Assembly guard: helms no longer load chunks, flood through modded fluids/terrain, or run unbounded.
+ - Fixes the floater redstone double-count, drifting part counts, missing block entities, the VS 2.4.11 helm dismount teleport, and a client model leak.
+ - Lighter engine block-state updates. /smoothsailing status and recount commands.'''
+# Works server-only, client-only or on both sides: no registry entries and no custom packets.
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="valkyrienskies"
+    mandatory=true
+    versionRange="[2.4.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="vs_eureka"
+    mandatory=true
+    versionRange="[1.6.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="eurekatweaks"
+    mandatory=false
+    versionRange="[1.0,)"
+    ordering="AFTER"
+    side="BOTH"

@@ -1,0 +1,27 @@
+# Gradle / ForgeGradle
+.gradle/
+build/
+out/
+run/
+runs/
+logs/
+classes/
+*.launch
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CI scratch
+ci-out/
