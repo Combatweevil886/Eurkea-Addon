@@ -96,6 +96,7 @@ public final class SelfTest {
     private static double savedValue;
     private static double savedValue2;
     private static double savedY;
+    private static double baselineDy;
     private static long markerForce;
     private static long markerTorque;
     private static BlockPos disassemblyCenter;
@@ -340,7 +341,9 @@ public final class SelfTest {
             // Eureka never sets POWERED in its default state, and BooleanProperty defaults to true, so set it explicitly.
             set(base.offset(0, 1, 2), eureka("anchor").defaultBlockState().setValue(BlockStateProperties.POWERED, false));
             for (int x = -2; x <= 2; x++) {
-                set(base.offset(x, 1, -2), eureka("white_balloon").defaultBlockState());
+                for (int y = 1; y <= 3; y++) {
+                    set(base.offset(x, y, -2), eureka("white_balloon").defaultBlockState()); // 15 balloons: enough to hover
+                }
             }
             if (level.getBlockEntity(base.offset(2, 1, 0)) instanceof EngineBlockEntity engine) {
                 engine.setItem(0, new ItemStack(Items.COAL, 16));
@@ -373,7 +376,7 @@ public final class SelfTest {
             engineShipPos = findOnShip(EngineBlock.class);
             check("ship loaded with Eureka controller", true, "ship " + ship.getId() + " / " + ship.getSlug());
             ShipPartRecount.Counts counts = ShipPartRecount.countsOf(c);
-            check("initial part counts", counts.helms() == 1 && counts.balloons() == 5 && counts.floaters() == 15
+            check("initial part counts", counts.helms() == 1 && counts.balloons() == 15 && counts.floaters() == 15
                 && counts.anchors() == 1 && counts.anchorsActive() == 0, counts.toString());
             check("helm, floater and engine found on ship", helmShipPos != null && floaterShipPos != null && engineShipPos != null,
                 helmShipPos + " " + floaterShipPos + " " + engineShipPos);
@@ -439,7 +442,7 @@ public final class SelfTest {
             marker = 0;
             check("negative balloon count gives zero lift, not negative lift", zeroed > 0, zeroed + " ticks zeroed");
             ShipPartRecount.Result r = ShipPartRecount.recount(level, ship, false);
-            check("recount restores 5 balloons", r.outcome() == ShipPartRecount.Outcome.CORRECTED && c.getBalloons() == 5,
+            check("recount restores 15 balloons", r.outcome() == ShipPartRecount.Outcome.CORRECTED && c.getBalloons() == 15,
                 r.outcome() + " " + r.after());
             ShipPartRecount.Result again = ShipPartRecount.recount(level, ship, false);
             check("second recount finds nothing to fix", again.outcome() == ShipPartRecount.Outcome.UNCHANGED, String.valueOf(again.outcome()));
@@ -460,26 +463,42 @@ public final class SelfTest {
             return true;
         }));
 
-        STEPS.add(new Step("zero elevationSnappiness keeps hovering instead of NaN", 200, false, () -> {
+        STEPS.add(new Step("zero elevationSnappiness keeps hovering instead of NaN", 400, false, () -> {
             EurekaConfig.Server s = EurekaConfig.SERVER;
             if (marker == 0) {
+                if (!waitTicks(40)) {
+                    return false; // settle after the previous step
+                }
+                savedY = ship.getTransform().getPositionInWorld().y();
+                marker = 1;
+                return false;
+            }
+            if (marker == 1) {
+                if (!waitTicks(60)) {
+                    return false; // baseline: normal settings
+                }
+                double y1 = ship.getTransform().getPositionInWorld().y();
+                baselineDy = y1 - savedY;
+                savedY = y1;
                 SSConfig.sanitizer = false; // let the bad value through on purpose
                 savedValue = s.getElevationSnappiness();
-                savedY = ship.getTransform().getPositionInWorld().y();
                 s.setElevationSnappiness(0.0);
-                marker = Stats.eventCount("physics.nonFiniteLiftReplaced") + 1;
+                markerForce = Stats.eventCount("physics.nonFiniteLiftReplaced");
+                marker = 2;
                 return false;
             }
             if (!waitTicks(60)) {
                 return false;
             }
-            long replaced = Stats.eventCount("physics.nonFiniteLiftReplaced") - (marker - 1);
+            long replaced = Stats.eventCount("physics.nonFiniteLiftReplaced") - markerForce;
             double dy = ship.getTransform().getPositionInWorld().y() - savedY;
             s.setElevationSnappiness(savedValue);
             SSConfig.sanitizer = true;
             marker = 0;
             check("NaN hover force replaced with a finite one", replaced > 0, replaced + " times");
-            check("ship held altitude with snappiness 0", Math.abs(dy) < 3.0, String.format("moved %.2f blocks vertically", dy));
+            check("ship holds altitude like normal with snappiness 0 (unguarded: ~45 block drop)",
+                Math.abs(dy) <= Math.abs(baselineDy) + 2.0,
+                String.format("3 s with snappiness 0: %.2f blocks, normal: %.2f blocks", dy, baselineDy));
             return true;
         }));
 
