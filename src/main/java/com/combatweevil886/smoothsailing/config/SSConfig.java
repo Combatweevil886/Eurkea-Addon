@@ -57,7 +57,7 @@ public final class SSConfig {
     public static volatile boolean physicsExceptionShield = true;
     public static volatile boolean mainThreadMessages = true;
     public static volatile boolean sanitizer = true;
-    public static volatile int sanitizerInterval = 20;
+    public static volatile int sanitizerInterval = 5;
     public static volatile boolean sanitizerWarnOps = true;
     public static volatile boolean assemblyNoChunkLoading = true;
     public static volatile boolean assemblySkipFluids = true;
@@ -104,7 +104,7 @@ public final class SSConfig {
         b.comment("Watches EurekaConfig (including values written by Eureka Tweaks) and clamps values that would make",
             "the ship controller divide by zero or produce NaN, e.g. elevationSnappiness = 0 or linearMaxMass = 0.").push("sanitizer");
         SANITIZER = b.define("enabled", true);
-        SANITIZER_INTERVAL = b.comment("How often (ticks) to re-check the values.").defineInRange("intervalTicks", 20, 1, 12000);
+        SANITIZER_INTERVAL = b.comment("How often (ticks) to re-check the values. Cheap: about 50 field reads.").defineInRange("intervalTicks", 5, 1, 12000);
         SANITIZER_WARN_OPS = b.comment("Tell online operators in chat (once per value) when something was clamped.").define("warnOperators", true);
         b.pop();
 
@@ -127,7 +127,8 @@ public final class SSConfig {
         FIX_FLOATER_DOUBLE_COUNT = b.comment("Eureka 1.6.x applies a floater's redstone change twice (once directly, once via the block update).",
                 "A powered floater then pushes the count negative and the ship is dragged underwater. This removes the duplicate.")
             .define("fixFloaterDoubleCount", true);
-        CLAMP_PART_COUNTS = b.comment("Never let a part count go below zero.").define("clampCounts", true);
+        CLAMP_PART_COUNTS = b.comment("Treat a negative balloon count as zero when computing lift (the recount repairs the stored number).")
+            .define("clampCounts", true);
         AUTO_RECOUNT = b.comment("Recount the real parts on each ship shortly after it loads (fixes counts already broken in old saves).")
             .define("autoRecount", true);
         PERIODIC_RECOUNT_MINUTES = b.comment("Re-run the recount for active ships every N minutes. 0 = only once per ship per server start.")
@@ -154,7 +155,8 @@ public final class SSConfig {
             .define("staleSeatCleanup", true);
         HELM_MENU_VALIDATION = b.comment("Close the helm menu when the helm is gone, so a stale menu can't assemble/disassemble remotely.")
             .define("menuValidation", true);
-        RECREATE_BLOCK_ENTITIES = b.comment("Recreate a missing helm/engine block entity instead of crashing when the block is used or broken.")
+        RECREATE_BLOCK_ENTITIES = b.comment("Replace a wrong-type helm/engine block entity (left behind by another mod swapping blocks) instead of",
+                "crashing with a ClassCastException when the block is used or broken.")
             .define("recreateMissingBlockEntities", true);
         b.pop();
 

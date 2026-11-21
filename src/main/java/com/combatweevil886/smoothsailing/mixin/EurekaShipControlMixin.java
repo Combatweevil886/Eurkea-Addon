@@ -14,7 +14,6 @@ import org.joml.Vector3dc;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.valkyrienskies.core.api.ships.PhysShip;
 import org.valkyrienskies.core.api.world.PhysLevel;
@@ -84,13 +83,20 @@ public abstract class EurekaShipControlMixin {
     /**
      * With {@code maxBalloonsPerEngine > 0} and no balloons on the ship, Eureka computes {@code 0 * min(1, 0/0)} = NaN
      * balloon force. Treat any non-finite result as "no lift".
+     * <p>
+     * Part counts are only ever corrected by the recount, never clamped in the setters: Valkyrien Skies defers the
+     * add/remove events of a ship that isn't loaded yet and may replay them out of order, so a count can be negative
+     * for a moment and still end up right. Only the lift computed from it is kept non-negative.
      */
     @Inject(method = "getBalloonForce", at = @At("RETURN"), cancellable = true, remap = false)
-    private void smoothsailing$finiteBalloonForce(CallbackInfoReturnable<Double> cir) {
+    private void smoothsailing$saneBalloonForce(CallbackInfoReturnable<Double> cir) {
         Stats.hook("physics.balloonForce");
         double v = cir.getReturnValueD();
         if (!Double.isFinite(v)) {
             Stats.event("physics.nonFiniteBalloonForceZeroed");
+            cir.setReturnValue(0.0);
+        } else if (v < 0.0 && SSConfig.clampPartCounts) {
+            Stats.event("parts.negativeBalloonLiftZeroed");
             cir.setReturnValue(0.0);
         }
     }
@@ -116,39 +122,20 @@ public abstract class EurekaShipControlMixin {
         original.call(player, message, actionBar);
     }
 
-    // ---------------------------------------------------------------- part counts never negative
+    // ---------------------------------------------------------------- hover force
 
-    @ModifyVariable(method = "setBalloons", at = @At("HEAD"), argsOnly = true, remap = false)
-    private int smoothsailing$clampBalloons(int v) {
-        return smoothsailing$clamp(v, "balloons");
-    }
-
-    @ModifyVariable(method = "setFloaters", at = @At("HEAD"), argsOnly = true, remap = false)
-    private int smoothsailing$clampFloaters(int v) {
-        return smoothsailing$clamp(v, "floaters");
-    }
-
-    @ModifyVariable(method = "setHelms", at = @At("HEAD"), argsOnly = true, remap = false)
-    private int smoothsailing$clampHelms(int v) {
-        return smoothsailing$clamp(v, "helms");
-    }
-
-    @ModifyVariable(method = "setAnchors", at = @At("HEAD"), argsOnly = true, remap = false)
-    private int smoothsailing$clampAnchors(int v) {
-        return smoothsailing$clamp(v, "anchors");
-    }
-
-    @ModifyVariable(method = "setAnchorsActive", at = @At("HEAD"), argsOnly = true, remap = false)
-    private int smoothsailing$clampAnchorsActive(int v) {
-        return smoothsailing$clamp(v, "anchorsActive");
-    }
-
-    private static int smoothsailing$clamp(int v, String what) {
-        Stats.hook("parts.setter");
-        if (v < 0 && SSConfig.clampPartCounts) {
-            Stats.event("parts.negativeCountClamped." + what);
-            return 0;
+    /**
+     * {@code elevationSnappiness = 0} turns Eureka's hover force into NaN, so the ship loses all lift and falls.
+     * Fall back to the same formula with a snappiness of 1 so it keeps holding altitude until the sanitizer kicks in.
+     */
+    @Inject(method = "getIdealUpwardForce", at = @At("RETURN"), cancellable = true, remap = false)
+    private void smoothsailing$finiteIdealUpwardForce(double idealUpwardVelY, double velY, double mass,
+                                                     CallbackInfoReturnable<Double> cir) {
+        Stats.hook("physics.idealUpwardForce");
+        if (SSConfig.forceGuard && !Double.isFinite(cir.getReturnValueD())) {
+            double fallback = (idealUpwardVelY - velY + 10.0) * mass;
+            Stats.event("physics.nonFiniteLiftReplaced");
+            cir.setReturnValue(Double.isFinite(fallback) ? fallback : 0.0);
         }
-        return v;
     }
 }

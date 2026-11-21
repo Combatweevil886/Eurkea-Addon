@@ -11,12 +11,12 @@ against Eureka 1.6.3 and 1.6.4.
 ### Crashes and physics explosions
 | Problem in Eureka | What Smooth Sailing does |
 |---|---|
-| A single NaN/infinite force (from a 0 config value) flings the ship to infinity, loads absurd chunks, and can take the server down. | Every force/torque Eureka hands the physics engine is checked; non-finite ones are dropped, runaway ones (> 1000 m/s² by default) are scaled down. |
+| A single NaN/infinite force (from a 0 config value) flings the ship to infinity, loads absurd chunks, and can take the server down. | Every force/torque Eureka hands the physics engine is checked; non-finite ones are dropped, runaway ones (> 1000 m/s² by default) are scaled down. A NaN hover force is replaced with a finite one, so the ship keeps its altitude instead of dropping. |
 | Any exception in Eureka's per-ship physics tick hits the Valkyrien Skies physics thread. | The tick is wrapped; a failing ship skips that tick and the error is logged (rate limited). |
-| Eureka Tweaks sliders go down to **0** for `elevationSnappiness`, `speedMassScale`, `linearMaxMass`, `maxSpeedFromEngines`, which Eureka divides by. `maxSizeForTurnSpeedPenalty < 0.5` makes Kotlin's `coerceIn` throw on the physics thread. | A config sanitizer checks `EurekaConfig` every second and clamps values to safe ranges. It logs each fix and tells online ops once. |
+| Eureka Tweaks sliders go down to **0** for `elevationSnappiness`, `speedMassScale`, `linearMaxMass`, `maxSpeedFromEngines`, which Eureka divides by. `maxSizeForTurnSpeedPenalty < 0.5` makes Kotlin's `coerceIn` throw on the physics thread. | A config sanitizer checks `EurekaConfig` every 5 ticks and clamps values to safe ranges (NaN values go back to Eureka's defaults). It logs each fix and tells online ops once. |
 | With `maxBalloonsPerEngine > 0`, a ship with no balloons computes `0 × (0/0)` = NaN lift. | Balloon force is forced finite. |
 | Cruise on/off messages are sent from the physics thread. | They are moved to the server thread. |
-| Right-clicking or breaking a helm/engine whose block entity went missing throws every time. | A fresh block entity is put in place instead. |
+| Right-clicking or breaking a helm/engine whose block entity is the wrong type (left behind when another mod swaps blocks) throws a `ClassCastException` every time. | A correct block entity is put in place instead. |
 | Helm wheel renderer crashes if the block state isn't a helm (Create contraptions, schematic previews, carried blocks). | Those renders are skipped, and the ship lookup is wrapped. |
 
 ### Server freezes (assembly)
@@ -29,7 +29,7 @@ against Eureka 1.6.3 and 1.6.4.
 
 ### Broken ships
 * **Floater double-count.** Powering a floater with redstone subtracted its buoyancy twice, so the count went negative and the ship got dragged underwater. Fixed.
-* Part counts (helms, balloons, floaters, anchors) can no longer go negative.
+* A count that has drifted negative can no longer give a ship negative lift.
 * **Recount:** shortly after a ship loads, and every 10 minutes, the real Eureka blocks on it are counted and wrong numbers are corrected. This repairs ships already broken in old saves. `/smoothsailing recount` does it on demand.
 
 ### Valkyrien Skies 2.4.11 helm-dismount teleport (Eureka issue #500)

@@ -25,7 +25,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
@@ -93,6 +94,11 @@ public final class SelfTest {
     private static long waitUntil;
     private static long marker;
     private static double savedValue;
+    private static double savedValue2;
+    private static double savedY;
+    private static long markerForce;
+    private static long markerTorque;
+    private static BlockPos disassemblyCenter;
 
     private SelfTest() {
     }
@@ -331,7 +337,8 @@ public final class SelfTest {
             set(helmWorldPos, eureka("oak_ship_helm").defaultBlockState());
             set(base.offset(2, 1, 0), eureka("engine").defaultBlockState());
             set(base.offset(-2, 1, 0), eureka("floater").defaultBlockState());
-            set(base.offset(0, 1, 2), eureka("anchor").defaultBlockState());
+            // Eureka never sets POWERED in its default state, and BooleanProperty defaults to true, so set it explicitly.
+            set(base.offset(0, 1, 2), eureka("anchor").defaultBlockState().setValue(BlockStateProperties.POWERED, false));
             for (int x = -2; x <= 2; x++) {
                 set(base.offset(x, 1, -2), eureka("white_balloon").defaultBlockState());
             }
@@ -418,10 +425,19 @@ public final class SelfTest {
             return true;
         }));
 
-        STEPS.add(new Step("negative counts clamp and recount repairs", 20, false, () -> {
+        STEPS.add(new Step("drifted counts: lift stays sane and recount repairs", 60, false, () -> {
             EurekaShipControl c = control();
-            c.setBalloons(-7);
-            check("negative balloon count clamped to 0", c.getBalloons() == 0, "balloons=" + c.getBalloons());
+            if (marker == 0) {
+                marker = Stats.eventCount("parts.negativeBalloonLiftZeroed") + 1;
+                c.setBalloons(-7);
+                return false;
+            }
+            if (!waitTicks(10)) {
+                return false;
+            }
+            long zeroed = Stats.eventCount("parts.negativeBalloonLiftZeroed") - (marker - 1);
+            marker = 0;
+            check("negative balloon count gives zero lift, not negative lift", zeroed > 0, zeroed + " ticks zeroed");
             ShipPartRecount.Result r = ShipPartRecount.recount(level, ship, false);
             check("recount restores 5 balloons", r.outcome() == ShipPartRecount.Outcome.CORRECTED && c.getBalloons() == 5,
                 r.outcome() + " " + r.after());
@@ -444,25 +460,58 @@ public final class SelfTest {
             return true;
         }));
 
-        STEPS.add(new Step("NaN force from a zero divisor is dropped on the physics thread", 200, false, () -> {
+        STEPS.add(new Step("zero elevationSnappiness keeps hovering instead of NaN", 200, false, () -> {
             EurekaConfig.Server s = EurekaConfig.SERVER;
             if (marker == 0) {
                 SSConfig.sanitizer = false; // let the bad value through on purpose
                 savedValue = s.getElevationSnappiness();
+                savedY = ship.getTransform().getPositionInWorld().y();
                 s.setElevationSnappiness(0.0);
-                marker = Stats.eventCount("physics.nonFiniteForceDropped") + 1;
+                marker = Stats.eventCount("physics.nonFiniteLiftReplaced") + 1;
                 return false;
             }
-            if (!waitTicks(40)) {
+            if (!waitTicks(60)) {
                 return false;
             }
-            long dropped = Stats.eventCount("physics.nonFiniteForceDropped") - (marker - 1);
+            long replaced = Stats.eventCount("physics.nonFiniteLiftReplaced") - (marker - 1);
+            double dy = ship.getTransform().getPositionInWorld().y() - savedY;
             s.setElevationSnappiness(savedValue);
             SSConfig.sanitizer = true;
             marker = 0;
-            check("NaN lift forces dropped", dropped > 0, dropped + " dropped");
+            check("NaN hover force replaced with a finite one", replaced > 0, replaced + " times");
+            check("ship held altitude with snappiness 0", Math.abs(dy) < 3.0, String.format("moved %.2f blocks vertically", dy));
+            return true;
+        }));
+
+        STEPS.add(new Step("NaN stabilizer force/torque are dropped on the physics thread", 200, false, () -> {
+            EurekaConfig.Server s = EurekaConfig.SERVER;
+            if (marker == 0) {
+                SSConfig.sanitizer = false;
+                savedValue = s.getAntiVelocityMassRelevance();
+                savedValue2 = s.getStabilizationTorqueConstant();
+                s.setAntiVelocityMassRelevance(Double.NaN);
+                s.setStabilizationTorqueConstant(Double.NaN);
+                markerForce = Stats.eventCount("physics.nonFiniteForceDropped");
+                markerTorque = Stats.eventCount("physics.nonFiniteTorqueDropped");
+                marker = 1;
+                return false;
+            }
+            if (!waitTicks(20)) {
+                return false;
+            }
+            long forces = Stats.eventCount("physics.nonFiniteForceDropped") - markerForce;
+            long torques = Stats.eventCount("physics.nonFiniteTorqueDropped") - markerTorque;
+            s.setAntiVelocityMassRelevance(savedValue);
+            s.setStabilizationTorqueConstant(savedValue2);
+            SSConfig.sanitizer = true;
+            marker = 0;
+            check("NaN forces dropped", forces > 0, forces + " dropped");
+            check("NaN torques dropped", torques > 0, torques + " dropped");
             check("ship still finite after NaN config", PhysicsGuard.isFinite(ship.getTransform().getPositionInWorld()),
                 String.valueOf(ship.getTransform().getPositionInWorld()));
+            ConfigSanitizer.run(server);
+            check("sanitizer resets non-finite values to Eureka defaults",
+                Double.isFinite(s.getAntiVelocityMassRelevance()) && Double.isFinite(s.getStabilizationTorqueConstant()), null);
             return true;
         }));
 
@@ -530,12 +579,16 @@ public final class SelfTest {
             check("hook: helm menu stillValid", Stats.hookCount("helm.menuStillValid") > 0, null);
             bot.closeContainer();
             if (engineShipPos != null) {
-                level.removeBlockEntity(engineShipPos);
+                // Another mod swapping blocks can leave a block entity of the wrong type behind; Eureka would throw
+                // a ClassCastException on every click.
+                level.setBlockEntity(new FurnaceBlockEntity(engineShipPos, Blocks.FURNACE.defaultBlockState()));
+                boolean wrongType = !(level.getBlockEntity(engineShipPos) instanceof EngineBlockEntity);
                 BlockState engineState = level.getBlockState(engineShipPos);
                 engineState.use(level, bot, InteractionHand.MAIN_HAND, hitOn(engineShipPos));
                 bot.closeContainer();
-                check("missing engine block entity recreated instead of crashing",
-                    level.getBlockEntity(engineShipPos) instanceof EngineBlockEntity && Stats.eventCount("blockEntity.recreated") > 0, null);
+                check("wrong-type engine block entity replaced instead of crashing",
+                    wrongType && level.getBlockEntity(engineShipPos) instanceof EngineBlockEntity
+                        && Stats.eventCount("blockEntity.recreated") > 0, "set up wrong type: " + wrongType);
             }
             marker = 0;
             return true;
@@ -552,6 +605,8 @@ public final class SelfTest {
                     skip("disassemble back into the world", "helm block entity missing");
                     return true;
                 }
+                Vector3dc p = ship.getTransform().getPositionInWorld();
+                disassemblyCenter = BlockPos.containing(p.x(), p.y(), p.z());
                 helm.disassemble();
                 marker = 1;
                 return false;
@@ -566,7 +621,7 @@ public final class SelfTest {
                 return false;
             }
             boolean found = false;
-            for (BlockPos p : BlockPos.betweenClosed(base.offset(-6, -4, -6), base.offset(6, 8, 6))) {
+            for (BlockPos p : BlockPos.betweenClosed(disassemblyCenter.offset(-8, -8, -8), disassemblyCenter.offset(8, 8, 8))) {
                 if (level.getBlockState(p).getBlock() instanceof ShipHelmBlock) {
                     found = true;
                     break;
