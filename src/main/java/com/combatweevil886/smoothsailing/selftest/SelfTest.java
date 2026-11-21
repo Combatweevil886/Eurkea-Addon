@@ -97,6 +97,7 @@ public final class SelfTest {
     private static double savedValue2;
     private static double savedY;
     private static double baselineDy;
+    private static int controlPowered;
     private static long markerForce;
     private static long markerTorque;
     private static BlockPos disassemblyCenter;
@@ -399,33 +400,61 @@ public final class SelfTest {
             return true;
         }));
 
-        STEPS.add(new Step("floater redstone is counted once", 100, false, () -> {
+        STEPS.add(new Step("floater redstone is counted once", 200, false, () -> {
             EurekaShipControl c = control();
             if (floaterShipPos == null || c == null) {
                 skip("floater redstone is counted once", "no floater/controller");
                 return true;
             }
-            if (marker == 0) {
-                set(floaterShipPos.above(), Blocks.REDSTONE_BLOCK.defaultBlockState());
-                marker = 1;
-                return false;
-            }
-            if (marker == 1) {
-                if (!waitTicks(2)) {
+            BlockPos power = floaterShipPos.above();
+            switch ((int) marker) {
+                case 0 -> { // control run: Eureka's own behaviour, fix switched off
+                    SSConfig.fixFloaterDoubleCount = false;
+                    set(power, Blocks.REDSTONE_BLOCK.defaultBlockState());
+                    marker = 1;
                     return false;
                 }
-                check("powered floater count (expect 0, Eureka alone gives -15)", c.getFloaters() == 0, "floaters=" + c.getFloaters());
-                check("hook: floater duplicate delta dropped", Stats.hookCount("floater.neighborChanged") > 0, null);
-                set(floaterShipPos.above(), Blocks.AIR.defaultBlockState());
-                marker = 2;
-                return false;
+                case 1 -> {
+                    if (!waitTicks(2)) {
+                        return false;
+                    }
+                    controlPowered = c.getFloaters();
+                    set(power, Blocks.AIR.defaultBlockState());
+                    marker = 2;
+                    return false;
+                }
+                case 2 -> {
+                    if (!waitTicks(2)) {
+                        return false;
+                    }
+                    int controlUnpowered = c.getFloaters();
+                    check("control: unpatched Eureka double-counts a powered floater (bug reproduced)",
+                        controlPowered == -15 && controlUnpowered == 15,
+                        "powered=" + controlPowered + " (correct is 0), unpowered=" + controlUnpowered);
+                    SSConfig.fixFloaterDoubleCount = true;
+                    set(power, Blocks.REDSTONE_BLOCK.defaultBlockState());
+                    marker = 3;
+                    return false;
+                }
+                case 3 -> {
+                    if (!waitTicks(2)) {
+                        return false;
+                    }
+                    check("powered floater count with the fix (expect 0)", c.getFloaters() == 0, "floaters=" + c.getFloaters());
+                    check("hook: floater duplicate delta dropped", Stats.hookCount("floater.neighborChanged") > 0, null);
+                    set(power, Blocks.AIR.defaultBlockState());
+                    marker = 4;
+                    return false;
+                }
+                default -> {
+                    if (!waitTicks(2)) {
+                        return false;
+                    }
+                    check("unpowered floater count back to 15", c.getFloaters() == 15, "floaters=" + c.getFloaters());
+                    marker = 0;
+                    return true;
+                }
             }
-            if (!waitTicks(2)) {
-                return false;
-            }
-            check("unpowered floater count back to 15", c.getFloaters() == 15, "floaters=" + c.getFloaters());
-            marker = 0;
-            return true;
         }));
 
         STEPS.add(new Step("drifted counts: lift stays sane and recount repairs", 60, false, () -> {
