@@ -1,0 +1,185 @@
+18:[21Nov2026 04:30:16.081] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/client/render/CustomLecternRenderer (java.lang.ClassNotFoundException: dan200.computercraft.client.render.CustomLecternRenderer)
+19:[21Nov2026 04:30:16.083] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/peripheral/speaker/SpeakerPosition (java.lang.ClassNotFoundException: dan200.computercraft.shared.peripheral.speaker.SpeakerPosition)
+20:[21Nov2026 04:30:16.084] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/client/sound/SpeakerSound (java.lang.ClassNotFoundException: dan200.computercraft.client.sound.SpeakerSound)
+21:[21Nov2026 04:30:16.085] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/turtle/core/TurtleBrain (java.lang.ClassNotFoundException: dan200.computercraft.shared.turtle.core.TurtleBrain)
+22:[21Nov2026 04:30:16.086] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/turtle/core/TurtleMoveCommand (java.lang.ClassNotFoundException: dan200.computercraft.shared.turtle.core.TurtleMoveCommand)
+23:[21Nov2026 04:30:16.087] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/peripheral/modem/wireless/WirelessNetwork (java.lang.ClassNotFoundException: dan200.computercraft.shared.peripheral.modem.wireless.WirelessNetwork)
+24:[21Nov2026 04:30:16.088] [main/WARN] [mixin/]: Error loading class: fuzs/echochest/world/level/block/entity/EchoChestBlockEntity (java.lang.ClassNotFoundException: fuzs.echochest.world.level.block.entity.EchoChestBlockEntity)
+25:[21Nov2026 04:30:16.089] [main/WARN] [mixin/]: Error loading class: fuzs/echochest/world/level/block/entity/EchoChestListener (java.lang.ClassNotFoundException: fuzs.echochest.world.level.block.entity.EchoChestListener)
+26:[21Nov2026 04:30:16.090] [main/WARN] [mixin/]: Error loading class: dev/ftb/mods/ftbchunks/data/ClaimedChunkManagerImpl (java.lang.ClassNotFoundException: dev.ftb.mods.ftbchunks.data.ClaimedChunkManagerImpl)
+27:[21Nov2026 04:30:16.091] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/client/render/HexAdditionalRenderers (java.lang.ClassNotFoundException: at.petrak.hexcasting.client.render.HexAdditionalRenderers)
+28:[21Nov2026 04:30:16.092] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/common/casting/actions/raycast/OpEntityRaycast (java.lang.ClassNotFoundException: at.petrak.hexcasting.common.casting.actions.raycast.OpEntityRaycast)
+29:[21Nov2026 04:30:16.093] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/common/casting/actions/spells/great/OpTeleport (java.lang.ClassNotFoundException: at.petrak.hexcasting.common.casting.actions.spells.great.OpTeleport)
+31:[21Nov2026 04:30:16.094] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/common/casting/actions/spells/great/OpTeleport$Spell (java.lang.ClassNotFoundException: at.petrak.hexcasting.common.casting.actions.spells.great.OpTeleport$Spell)
+33:[21Nov2026 04:30:16.096] [main/WARN] [mixin/]: Error loading class: net/beholderface/ephemera/casting/patterns/link/OpNetworkTeleport (java.lang.ClassNotFoundException: net.beholderface.ephemera.casting.patterns.link.OpNetworkTeleport)
+34:[21Nov2026 04:30:16.097] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/common/casting/actions/spells/link/OpLink (java.lang.ClassNotFoundException: ram.talia.hexal.common.casting.actions.spells.link.OpLink)
+35:[21Nov2026 04:30:16.098] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/common/casting/actions/spells/link/OpLinkOthers (java.lang.ClassNotFoundException: ram.talia.hexal.common.casting.actions.spells.link.OpLinkOthers)
+36:[21Nov2026 04:30:16.099] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/client/RenderHelperKt (java.lang.ClassNotFoundException: ram.talia.hexal.client.RenderHelperKt)
+37:[21Nov2026 04:30:16.100] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/api/linkable/ServerLinkableHolder (java.lang.ClassNotFoundException: ram.talia.hexal.api.linkable.ServerLinkableHolder)
+38:[21Nov2026 04:30:16.101] [main/WARN] [mixin/]: Error loading class: net/mehvahdjukaar/moonlight/core/misc/FakeServerLevel (java.lang.ClassNotFoundException: net.mehvahdjukaar.moonlight.core.misc.FakeServerLevel)
+40:[21Nov2026 04:30:16.102] [main/WARN] [mixin/]: Error loading class: com/jamieswhiteshirt/reachentityattributes/ReachEntityAttributes (java.lang.ClassNotFoundException: com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes)
+41:[21Nov2026 04:30:16.102] [main/WARN] [mixin/]: Error loading class: li/cil/tis3d/common/entity/InfraredPacketEntity (java.lang.ClassNotFoundException: li.cil.tis3d.common.entity.InfraredPacketEntity)
+42:[21Nov2026 04:30:16.130] [main/WARN] [mixin/]: Error loading class: com/lilypuree/connectiblechains/entity/ChainCollisionEntity (java.lang.ClassNotFoundException: com.lilypuree.connectiblechains.entity.ChainCollisionEntity)
+44:[21Nov2026 04:30:16.132] [main/WARN] [mixin/]: Error loading class: com/lilypuree/connectiblechains/entity/ChainKnotEntity (java.lang.ClassNotFoundException: com.lilypuree.connectiblechains.entity.ChainKnotEntity)
+46:[21Nov2026 04:30:16.133] [main/WARN] [mixin/]: Error loading class: com/lilypuree/connectiblechains/chain/ChainLink (java.lang.ClassNotFoundException: com.lilypuree.connectiblechains.chain.ChainLink)
+48:[21Nov2026 04:30:16.134] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/kinetics/base/BlockBreakingKineticBlockEntity (java.lang.ClassNotFoundException: com.simibubi.create.content.kinetics.base.BlockBreakingKineticBlockEntity)
+50:[21Nov2026 04:30:16.135] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/contraptions/ControlledContraptionEntity (java.lang.ClassNotFoundException: com.simibubi.create.content.contraptions.ControlledContraptionEntity)
+52:[21Nov2026 04:30:16.136] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/foundation/render/BlockEntityRenderHelper (java.lang.ClassNotFoundException: com.simibubi.create.foundation.render.BlockEntityRenderHelper)
+53:[21Nov2026 04:30:16.137] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/foundation/render/BlockEntityRenderHelper (java.lang.ClassNotFoundException: com.simibubi.create.foundation.render.BlockEntityRenderHelper)
+54:[21Nov2026 04:30:16.138] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/contraptions/glue/SuperGlueSelectionHandler (java.lang.ClassNotFoundException: com.simibubi.create.content.contraptions.glue.SuperGlueSelectionHandler)
+55:[21Nov2026 04:30:16.139] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/contraptions/glue/SuperGlueSelectionHandler (java.lang.ClassNotFoundException: com.simibubi.create.content.contraptions.glue.SuperGlueSelectionHandler)
+56:[21Nov2026 04:30:16.140] [main/WARN] [mixin/]: Error loading class: net/mcreator/createstuffadditions/procedures/GrapplinWhiskChainsLineProcedure (java.lang.ClassNotFoundException: net.mcreator.createstuffadditions.procedures.GrapplinWhiskChainsLineProcedure)
+57:[21Nov2026 04:30:16.141] [main/WARN] [mixin/]: Error loading class: net/mcreator/createstuffadditions/procedures/GrapplinWhiskItemInHandTickProcedure (java.lang.ClassNotFoundException: net.mcreator.createstuffadditions.procedures.GrapplinWhiskItemInHandTickProcedure)
+58:[21Nov2026 04:30:16.142] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/common/gui/BlockEntityInventory (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.common.gui.BlockEntityInventory)
+59:[21Nov2026 04:30:16.143] [main/WARN] [mixin/]: Error loading class: org/cyclops/integrateddynamics/core/block/VoxelShapeComponents (java.lang.ClassNotFoundException: org.cyclops.integrateddynamics.core.block.VoxelShapeComponents)
+61:[21Nov2026 04:30:16.144] [main/WARN] [mixin/]: Error loading class: mekanism/common/lib/radiation/RadiationManager (java.lang.ClassNotFoundException: mekanism.common.lib.radiation.RadiationManager)
+63:[21Nov2026 04:30:16.145] [main/WARN] [mixin/]: Error loading class: dev/su5ed/mffs/network/ClientPacketHandler (java.lang.ClassNotFoundException: dev.su5ed.mffs.network.ClientPacketHandler)
+64:[21Nov2026 04:30:16.146] [main/WARN] [mixin/]: Error loading class: dev/su5ed/mffs/util/FrequencyGrid (java.lang.ClassNotFoundException: dev.su5ed.mffs.util.FrequencyGrid)
+65:[21Nov2026 04:30:16.147] [main/WARN] [mixin/]: Error loading class: me/desht/modularrouters/container/RouterMenu (java.lang.ClassNotFoundException: me.desht.modularrouters.container.RouterMenu)
+66:[21Nov2026 04:30:16.148] [main/WARN] [mixin/]: Error loading class: cofh/core/block/entity/TileCoFH (java.lang.ClassNotFoundException: cofh.core.block.entity.TileCoFH)
+67:[21Nov2026 04:30:16.149] [main/WARN] [mixin/]: Error loading class: twilightforest/world/components/chunkgenerators/ChunkGeneratorTwilight (java.lang.ClassNotFoundException: twilightforest.world.components.chunkgenerators.ChunkGeneratorTwilight)
+70:org.spongepowered.asm.mixin.transformer.throwables.InvalidInterfaceMixinException: Interface mixin contains a non-public method! Found destWorldPos(Lnet/minecraft/world/level/gameevent/vibrations/VibrationInfo;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/world/phys/Vec3; in valkyrienskies-common.mixins.json:feature.sculk.MixinVibrationSystemTicker
+112:[21Nov2026 04:30:22.192] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /home/runner/work/_temp/smoke-eureka-1.6.4/config/smoothsailing-common.toml is not correct. Correcting
+118:[21Nov2026 04:30:22.194] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics.exceptionShield was corrected from null to its default, true. 
+422:[21Nov2026 04:30:28.260] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Eureka 1.6.4 / Valkyrien Skies 2.4.11 / Eureka Tweaks not installed
+423:[21Nov2026 04:30:28.260] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Applied hooks so far: EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin
+424:[21Nov2026 04:30:28.260] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Note: Valkyrien Skies 2.4.11 has the helm-dismount teleport bug (Eureka #500) - dismount fix ON.
+425:[21Nov2026 04:30:28.262] [Server thread/INFO] [SmoothSailing/]: [SelfTest] starting; Eureka 1.6.4, VS 2.4.11
+426:[21Nov2026 04:30:28.504] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: SS_SelfTest[embedded] logged in with entity id 1 at (-3.5, -60.0, 10.5)
+427:[21Nov2026 04:30:28.530] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SS_SelfTest joined the game
+428:[21Nov2026 04:30:28.672] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player joined  (SS_SelfTest)
+429:[21Nov2026 04:30:29.356] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  structure placed  (helm at BlockPos{x=0, y=121, z=0})
+431:[21Nov2026 04:30:29.665] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly BFS guarded getBlockState  (calls 256)
+432:[21Nov2026 04:30:29.666] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly max-ship-blocks cap
+433:[21Nov2026 04:30:29.666] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm assemble
+434:[21Nov2026 04:30:29.666] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  assembly cooldown blocks an immediate second click
+435:[21Nov2026 04:30:29.766] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship loaded with Eureka controller  (ship 3 / master-cemetery-day)
+436:[21Nov2026 04:30:29.768] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  initial part counts  (helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+437:[21Nov2026 04:30:29.768] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm, floater and engine found on ship  (BlockPos{x=-28669952, y=127, z=12290047} BlockPos{x=-28669954, y=127, z=12290047} BlockPos{x=-28669950, y=127, z=12290047})
+438:[21Nov2026 04:30:34.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: physTick wrapped  (ticks 281)
+439:[21Nov2026 04:30:34.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: applyWorldForce guarded
+440:[21Nov2026 04:30:34.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: setBuoyantFactor guarded
+441:[21Nov2026 04:30:34.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: balloon force guarded
+442:[21Nov2026 04:30:34.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize torque guarded
+443:[21Nov2026 04:30:34.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize force guarded
+444:[21Nov2026 04:30:34.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm tick housekeeping
+445:[21Nov2026 04:30:34.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship position is finite  (( 6.293E-1  1.214E+2  5.787E-1))
+446:[21Nov2026 04:30:34.815] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  control: unpatched Eureka double-counts a powered floater (bug reproduced)  (powered=-15 (correct is 0), unpowered=15)
+447:[21Nov2026 04:30:34.965] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  powered floater count with the fix (expect 0)  (floaters=0)
+448:[21Nov2026 04:30:34.965] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: floater duplicate delta dropped
+449:[21Nov2026 04:30:35.115] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  unpowered floater count back to 15  (floaters=15)
+450:[21Nov2026 04:30:35.715] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  negative balloon count gives zero lift, not negative lift  (33 ticks zeroed)
+451:[21Nov2026 04:30:35.716] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Corrected Eureka part counts of ship 3 (master-cemetery-day): [helms=1 balloons=-7 floaters=15 anchors=1 activeAnchors=0] -> [helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0]
+452:[21Nov2026 04:30:35.716] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  recount restores 15 balloons  (CORRECTED helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+453:[21Nov2026 04:30:35.716] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  second recount finds nothing to fix  (UNCHANGED)
+454:[21Nov2026 04:30:35.766] [Server thread/WARN] [SmoothSailing/]: [Smooth Sailing] EurekaConfig.elevationSnappiness was 0.0 - divides gravity; 0 gives NaN lift; clamped to 0.01. (If Eureka Tweaks set this, move its slider off the limit.)
+455:[21Nov2026 04:30:35.767] [Server thread/WARN] [SmoothSailing/]: [Smooth Sailing] EurekaConfig.maxSizeForTurnSpeedPenalty was 0.1 - below 0.5 Kotlin's coerceIn throws on the physics thread; clamped to 0.5. (If Eureka Tweaks set this, move its slider off the limit.)
+456:[21Nov2026 04:30:35.768] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  elevationSnappiness 0 -> >= 0.01  (now 0.01)
+457:[21Nov2026 04:30:35.768] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  maxSizeForTurnSpeedPenalty 0.1 -> 0.5  (now 0.5)
+458:[21Nov2026 04:30:43.915] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN hover force replaced with a finite one  (183 times)
+459:[21Nov2026 04:30:43.915] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship holds altitude like normal with snappiness 0 (unguarded: ~45 block drop)  (3 s with snappiness 0: -0.00 blocks, normal: -0.03 blocks)
+460:[21Nov2026 04:30:43.973] [Physics thread/WARN] [SmoothSailing/]: [Smooth Sailing] Dropped a non-finite Eureka torque at stabilize.applyInvariantTorque ((      NaN       NaN       NaN)).
+461:[21Nov2026 04:30:43.973] [Physics thread/WARN] [SmoothSailing/]: [Smooth Sailing] Dropped a non-finite Eureka force at stabilize.applyInvariantForce ((      NaN       NaN       NaN)). Usually a Eureka/Eureka Tweaks value is 0 or extreme.
+462:[21Nov2026 04:30:45.015] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN forces dropped  (63 dropped)
+463:[21Nov2026 04:30:45.015] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN torques dropped  (63 dropped)
+464:[21Nov2026 04:30:45.015] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship still finite after NaN config  (( 6.293E-1  1.180E+2  5.787E-1))
+465:[21Nov2026 04:30:45.015] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  sanitizer resets non-finite values to Eureka defaults
+466:[21Nov2026 04:30:45.065] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: engine heat state update
+467:[21Nov2026 04:30:45.127] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm use guard
+468:[21Nov2026 04:30:45.128] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player seated at helm  (ShipMountingEntity['entity.valkyrienskies.ship_mounting_entity'/2, l='ServerLevel[world]', x=-28669951.50, y=127.10, z=12290046.50])
+469:[21Nov2026 04:30:45.666] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: voluntary dismount recorded
+470:[21Nov2026 04:30:45.724] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] SS_SelfTest left a helm and ended up 85.0 blocks from the seat; moved back to 0.5, 117.9, -0.5.
+471:[21Nov2026 04:30:45.865] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  dismount fix returned the player to the seat  (0.1 blocks away)
+472:[21Nov2026 04:30:46.215] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm menu stillValid
+473:[21Nov2026 04:30:46.219] [Server thread/WARN] [SmoothSailing/]: [Smooth Sailing] Block{vs_eureka:engine} at BlockPos{x=-28669950, y=127, z=12290047} had a wrong (FurnaceBlockEntity) block entity; created a new one so it no longer crashes when used.
+474:[21Nov2026 04:30:46.221] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  wrong-type engine block entity replaced instead of crashing  (set up wrong type: true)
+475:[21Nov2026 04:30:46.265] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship at y~120 may be disassembled
+476:[21Nov2026 04:30:48.365] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: disassembly guard
+477:[21Nov2026 04:30:48.365] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm is back in the world after disassembly
+478:[21Nov2026 04:30:48.415] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  all server mixins applied  (EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin)
+479:[21Nov2026 04:30:48.415] [Server thread/INFO] [SmoothSailing/]: [SelfTest] events so far: {blockEntity.recreated=1, dismount.teleportCorrected=1, engine.heatStateReconciled=1, parts.floaterDoubleCountPrevented=3, parts.negativeBalloonLiftZeroed=33, physics.nonFiniteForceDropped=63, physics.nonFiniteLiftReplaced=183, physics.nonFiniteTorqueDropped=63, recount.shipCorrected=1, sanitizer.valueClamped=2}
+480:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Eureka: Smooth Sailing self-test
+481:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Eureka 1.6.4 / Valkyrien Skies 2.4.11
+482:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Applied mixins: EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin
+483:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] 
+484:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player joined  (SS_SelfTest)
+485:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  structure placed  (helm at BlockPos{x=0, y=121, z=0})
+486:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly BFS guarded getBlockState  (calls 256)
+487:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly max-ship-blocks cap
+488:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm assemble
+489:[21Nov2026 04:30:48.466] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  assembly cooldown blocks an immediate second click
+490:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship loaded with Eureka controller  (ship 3 / master-cemetery-day)
+491:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  initial part counts  (helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+492:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm, floater and engine found on ship  (BlockPos{x=-28669952, y=127, z=12290047} BlockPos{x=-28669954, y=127, z=12290047} BlockPos{x=-28669950, y=127, z=12290047})
+493:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: physTick wrapped  (ticks 281)
+494:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: applyWorldForce guarded
+495:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: setBuoyantFactor guarded
+496:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: balloon force guarded
+497:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize torque guarded
+498:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize force guarded
+499:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm tick housekeeping
+500:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship position is finite  (( 6.293E-1  1.214E+2  5.787E-1))
+501:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  control: unpatched Eureka double-counts a powered floater (bug reproduced)  (powered=-15 (correct is 0), unpowered=15)
+502:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  powered floater count with the fix (expect 0)  (floaters=0)
+503:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: floater duplicate delta dropped
+504:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  unpowered floater count back to 15  (floaters=15)
+505:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  negative balloon count gives zero lift, not negative lift  (33 ticks zeroed)
+506:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  recount restores 15 balloons  (CORRECTED helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+507:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  second recount finds nothing to fix  (UNCHANGED)
+508:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  elevationSnappiness 0 -> >= 0.01  (now 0.01)
+509:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  maxSizeForTurnSpeedPenalty 0.1 -> 0.5  (now 0.5)
+510:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN hover force replaced with a finite one  (183 times)
+511:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship holds altitude like normal with snappiness 0 (unguarded: ~45 block drop)  (3 s with snappiness 0: -0.00 blocks, normal: -0.03 blocks)
+512:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN forces dropped  (63 dropped)
+513:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN torques dropped  (63 dropped)
+514:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship still finite after NaN config  (( 6.293E-1  1.180E+2  5.787E-1))
+515:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  sanitizer resets non-finite values to Eureka defaults
+516:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: engine heat state update
+517:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm use guard
+518:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player seated at helm  (ShipMountingEntity['entity.valkyrienskies.ship_mounting_entity'/2, l='ServerLevel[world]', x=-28669951.50, y=127.10, z=12290046.50])
+519:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: voluntary dismount recorded
+520:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  dismount fix returned the player to the seat  (0.1 blocks away)
+521:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm menu stillValid
+522:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  wrong-type engine block entity replaced instead of crashing  (set up wrong type: true)
+523:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship at y~120 may be disassembled
+524:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: disassembly guard
+525:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm is back in the world after disassembly
+526:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  all server mixins applied  (EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin)
+527:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] 
+528:[21Nov2026 04:30:48.467] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Hooks:
+529:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   assembly.bfsGetBlockState = 256
+530:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   assembly.maxShipBlocks = 514
+531:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   dismount.recorded = 1
+532:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   engine.heatStateUpdate = 3
+533:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   engine.use = 1
+534:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   floater.neighborChanged = 5
+535:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.assemble = 1
+536:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.disassemble = 1
+537:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.menuStillValid = 12
+538:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.tick = 382
+539:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.use = 1
+540:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.applyWorldForce = 993
+541:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.balloonForce = 990
+542:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.forceChecked = 2968
+543:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.idealUpwardForce = 990
+544:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.setBuoyantFactor = 990
+545:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.stabilizeForce = 986
+546:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.stabilizeTorque = 989
+547:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.tick = 996
+548:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   recount.run = 3
+549:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Events:
+550:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   blockEntity.recreated = 1
+551:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   dismount.teleportCorrected = 1
+552:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   engine.heatStateReconciled = 1
+553:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   parts.floaterDoubleCountPrevented = 3
+554:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   parts.negativeBalloonLiftZeroed = 33
+555:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.nonFiniteForceDropped = 63
+556:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.nonFiniteLiftReplaced = 183
+557:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.nonFiniteTorqueDropped = 63
+558:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   recount.shipCorrected = 1
+559:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   sanitizer.valueClamped = 2
+560:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest] 
+561:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: [SelfTest] RESULT: PASS (0 failure(s))
+562:[21Nov2026 04:30:48.468] [Server thread/INFO] [SmoothSailing/]: SMOOTHSAILING-SELFTEST RESULT: PASS
+563:[21Nov2026 04:30:48.470] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SS_SelfTest lost connection: self-test done
+564:[21Nov2026 04:30:48.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SS_SelfTest left the game

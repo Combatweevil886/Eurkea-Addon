@@ -1,0 +1,82 @@
+Eureka: Smooth Sailing self-test
+Eureka 1.6.4 / Valkyrien Skies 2.4.11
+Applied mixins: EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin
+
+PASS  test player joined  (SS_SelfTest)
+PASS  structure placed  (helm at BlockPos{x=0, y=121, z=0})
+PASS  hook: assembly BFS guarded getBlockState  (calls 256)
+PASS  hook: assembly max-ship-blocks cap
+PASS  hook: helm assemble
+PASS  assembly cooldown blocks an immediate second click
+PASS  ship loaded with Eureka controller  (ship 3 / master-cemetery-day)
+PASS  initial part counts  (helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+PASS  helm, floater and engine found on ship  (BlockPos{x=-28669952, y=127, z=12290047} BlockPos{x=-28669954, y=127, z=12290047} BlockPos{x=-28669950, y=127, z=12290047})
+PASS  hook: physTick wrapped  (ticks 281)
+PASS  hook: applyWorldForce guarded
+PASS  hook: setBuoyantFactor guarded
+PASS  hook: balloon force guarded
+PASS  hook: stabilize torque guarded
+PASS  hook: stabilize force guarded
+PASS  hook: helm tick housekeeping
+PASS  ship position is finite  (( 6.293E-1  1.214E+2  5.787E-1))
+PASS  control: unpatched Eureka double-counts a powered floater (bug reproduced)  (powered=-15 (correct is 0), unpowered=15)
+PASS  powered floater count with the fix (expect 0)  (floaters=0)
+PASS  hook: floater duplicate delta dropped
+PASS  unpowered floater count back to 15  (floaters=15)
+PASS  negative balloon count gives zero lift, not negative lift  (33 ticks zeroed)
+PASS  recount restores 15 balloons  (CORRECTED helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+PASS  second recount finds nothing to fix  (UNCHANGED)
+PASS  elevationSnappiness 0 -> >= 0.01  (now 0.01)
+PASS  maxSizeForTurnSpeedPenalty 0.1 -> 0.5  (now 0.5)
+PASS  NaN hover force replaced with a finite one  (183 times)
+PASS  ship holds altitude like normal with snappiness 0 (unguarded: ~45 block drop)  (3 s with snappiness 0: -0.00 blocks, normal: -0.03 blocks)
+PASS  NaN forces dropped  (63 dropped)
+PASS  NaN torques dropped  (63 dropped)
+PASS  ship still finite after NaN config  (( 6.293E-1  1.180E+2  5.787E-1))
+PASS  sanitizer resets non-finite values to Eureka defaults
+PASS  hook: engine heat state update
+PASS  hook: helm use guard
+PASS  test player seated at helm  (ShipMountingEntity['entity.valkyrienskies.ship_mounting_entity'/2, l='ServerLevel[world]', x=-28669951.50, y=127.10, z=12290046.50])
+PASS  hook: voluntary dismount recorded
+PASS  dismount fix returned the player to the seat  (0.1 blocks away)
+PASS  hook: helm menu stillValid
+PASS  wrong-type engine block entity replaced instead of crashing  (set up wrong type: true)
+PASS  ship at y~120 may be disassembled
+PASS  hook: disassembly guard
+PASS  helm is back in the world after disassembly
+PASS  all server mixins applied  (EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin)
+
+Hooks:
+  assembly.bfsGetBlockState = 256
+  assembly.maxShipBlocks = 514
+  dismount.recorded = 1
+  engine.heatStateUpdate = 3
+  engine.use = 1
+  floater.neighborChanged = 5
+  helm.assemble = 1
+  helm.disassemble = 1
+  helm.menuStillValid = 12
+  helm.tick = 382
+  helm.use = 1
+  physics.applyWorldForce = 993
+  physics.balloonForce = 990
+  physics.forceChecked = 2968
+  physics.idealUpwardForce = 990
+  physics.setBuoyantFactor = 990
+  physics.stabilizeForce = 986
+  physics.stabilizeTorque = 989
+  physics.tick = 996
+  recount.run = 3
+Events:
+  blockEntity.recreated = 1
+  dismount.teleportCorrected = 1
+  engine.heatStateReconciled = 1
+  parts.floaterDoubleCountPrevented = 3
+  parts.negativeBalloonLiftZeroed = 33
+  physics.nonFiniteForceDropped = 63
+  physics.nonFiniteLiftReplaced = 183
+  physics.nonFiniteTorqueDropped = 63
+  recount.shipCorrected = 1
+  sanitizer.valueClamped = 2
+
+RESULT: PASS (0 failure(s))

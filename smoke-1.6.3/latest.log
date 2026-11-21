@@ -1,0 +1,615 @@
+[21Nov2026 04:29:34.083] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.4.20, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
+[21Nov2026 04:29:34.087] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.21 by Eclipse Adoptium; OS Linux arch amd64 version 7.0.0-1020-azure
+[21Nov2026 04:29:34.182] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file /home/runner/work/_temp/smoke-eureka-1.6.3/config/fml.toml is not correct. Correcting
+[21Nov2026 04:29:34.183] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[21Nov2026 04:29:34.183] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[21Nov2026 04:29:34.183] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
+[21Nov2026 04:29:34.184] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[21Nov2026 04:29:34.294] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[21Nov2026 04:29:34.329] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/runner/work/_temp/smoke-eureka-1.6.3/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[21Nov2026 04:29:34.548] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/runner/work/_temp/smoke-eureka-1.6.3/libraries/net/minecraftforge/fmlcore/1.20.1-47.4.20/fmlcore-1.20.1-47.4.20.jar is missing mods.toml file
+[21Nov2026 04:29:34.549] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/runner/work/_temp/smoke-eureka-1.6.3/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.4.20/javafmllanguage-1.20.1-47.4.20.jar is missing mods.toml file
+[21Nov2026 04:29:34.550] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/runner/work/_temp/smoke-eureka-1.6.3/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.4.20/lowcodelanguage-1.20.1-47.4.20.jar is missing mods.toml file
+[21Nov2026 04:29:34.551] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/runner/work/_temp/smoke-eureka-1.6.3/libraries/net/minecraftforge/mclanguage/1.20.1-47.4.20/mclanguage-1.20.1-47.4.20.jar is missing mods.toml file
+[21Nov2026 04:29:34.878] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 26 dependencies adding them to mods collection
+[21Nov2026 04:29:36.175] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[21Nov2026 04:29:36.188] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[21Nov2026 04:29:36.290] [main/WARN] [mixin/]: Reference map 'eureka-1201-forge-refmap.json' for vs_eureka.mixins.json could not be read. If this is a development environment you can ignore this message
+[21Nov2026 04:29:37.041] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/client/render/CustomLecternRenderer (java.lang.ClassNotFoundException: dan200.computercraft.client.render.CustomLecternRenderer)
+[21Nov2026 04:29:37.042] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/peripheral/speaker/SpeakerPosition (java.lang.ClassNotFoundException: dan200.computercraft.shared.peripheral.speaker.SpeakerPosition)
+[21Nov2026 04:29:37.042] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/client/sound/SpeakerSound (java.lang.ClassNotFoundException: dan200.computercraft.client.sound.SpeakerSound)
+[21Nov2026 04:29:37.043] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/turtle/core/TurtleBrain (java.lang.ClassNotFoundException: dan200.computercraft.shared.turtle.core.TurtleBrain)
+[21Nov2026 04:29:37.044] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/turtle/core/TurtleMoveCommand (java.lang.ClassNotFoundException: dan200.computercraft.shared.turtle.core.TurtleMoveCommand)
+[21Nov2026 04:29:37.045] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/peripheral/modem/wireless/WirelessNetwork (java.lang.ClassNotFoundException: dan200.computercraft.shared.peripheral.modem.wireless.WirelessNetwork)
+[21Nov2026 04:29:37.046] [main/WARN] [mixin/]: Error loading class: fuzs/echochest/world/level/block/entity/EchoChestBlockEntity (java.lang.ClassNotFoundException: fuzs.echochest.world.level.block.entity.EchoChestBlockEntity)
+[21Nov2026 04:29:37.047] [main/WARN] [mixin/]: Error loading class: fuzs/echochest/world/level/block/entity/EchoChestListener (java.lang.ClassNotFoundException: fuzs.echochest.world.level.block.entity.EchoChestListener)
+[21Nov2026 04:29:37.048] [main/WARN] [mixin/]: Error loading class: dev/ftb/mods/ftbchunks/data/ClaimedChunkManagerImpl (java.lang.ClassNotFoundException: dev.ftb.mods.ftbchunks.data.ClaimedChunkManagerImpl)
+[21Nov2026 04:29:37.049] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/client/render/HexAdditionalRenderers (java.lang.ClassNotFoundException: at.petrak.hexcasting.client.render.HexAdditionalRenderers)
+[21Nov2026 04:29:37.050] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/common/casting/actions/raycast/OpEntityRaycast (java.lang.ClassNotFoundException: at.petrak.hexcasting.common.casting.actions.raycast.OpEntityRaycast)
+[21Nov2026 04:29:37.051] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/common/casting/actions/spells/great/OpTeleport (java.lang.ClassNotFoundException: at.petrak.hexcasting.common.casting.actions.spells.great.OpTeleport)
+[21Nov2026 04:29:37.051] [main/WARN] [mixin/]: @Mixin target at.petrak.hexcasting.common.casting.actions.spells.great.OpTeleport was not found valkyrienskies-common.mixins.json:mod_compat.hexcasting.MixinOpTeleport
+[21Nov2026 04:29:37.052] [main/WARN] [mixin/]: Error loading class: at/petrak/hexcasting/common/casting/actions/spells/great/OpTeleport$Spell (java.lang.ClassNotFoundException: at.petrak.hexcasting.common.casting.actions.spells.great.OpTeleport$Spell)
+[21Nov2026 04:29:37.052] [main/WARN] [mixin/]: @Mixin target at.petrak.hexcasting.common.casting.actions.spells.great.OpTeleport$Spell was not found valkyrienskies-common.mixins.json:mod_compat.hexcasting.MixinOpTeleport$Spell
+[21Nov2026 04:29:37.053] [main/WARN] [mixin/]: Error loading class: net/beholderface/ephemera/casting/patterns/link/OpNetworkTeleport (java.lang.ClassNotFoundException: net.beholderface.ephemera.casting.patterns.link.OpNetworkTeleport)
+[21Nov2026 04:29:37.053] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/common/casting/actions/spells/link/OpLink (java.lang.ClassNotFoundException: ram.talia.hexal.common.casting.actions.spells.link.OpLink)
+[21Nov2026 04:29:37.054] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/common/casting/actions/spells/link/OpLinkOthers (java.lang.ClassNotFoundException: ram.talia.hexal.common.casting.actions.spells.link.OpLinkOthers)
+[21Nov2026 04:29:37.055] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/client/RenderHelperKt (java.lang.ClassNotFoundException: ram.talia.hexal.client.RenderHelperKt)
+[21Nov2026 04:29:37.056] [main/WARN] [mixin/]: Error loading class: ram/talia/hexal/api/linkable/ServerLinkableHolder (java.lang.ClassNotFoundException: ram.talia.hexal.api.linkable.ServerLinkableHolder)
+[21Nov2026 04:29:37.056] [main/WARN] [mixin/]: Error loading class: net/mehvahdjukaar/moonlight/core/misc/FakeServerLevel (java.lang.ClassNotFoundException: net.mehvahdjukaar.moonlight.core.misc.FakeServerLevel)
+[21Nov2026 04:29:37.057] [main/WARN] [mixin/]: @Mixin target net.mehvahdjukaar.moonlight.core.misc.FakeServerLevel was not found valkyrienskies-common.mixins.json:mod_compat.moonlight.MixinFakeServerLevel
+[21Nov2026 04:29:37.057] [main/WARN] [mixin/]: Error loading class: com/jamieswhiteshirt/reachentityattributes/ReachEntityAttributes (java.lang.ClassNotFoundException: com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes)
+[21Nov2026 04:29:37.058] [main/WARN] [mixin/]: Error loading class: li/cil/tis3d/common/entity/InfraredPacketEntity (java.lang.ClassNotFoundException: li.cil.tis3d.common.entity.InfraredPacketEntity)
+[21Nov2026 04:29:37.082] [main/WARN] [mixin/]: Error loading class: com/lilypuree/connectiblechains/entity/ChainCollisionEntity (java.lang.ClassNotFoundException: com.lilypuree.connectiblechains.entity.ChainCollisionEntity)
+[21Nov2026 04:29:37.082] [main/WARN] [mixin/]: @Mixin target com.lilypuree.connectiblechains.entity.ChainCollisionEntity was not found valkyrienskies-forge.mixins.json:compat.connectiblechains.MixinChainCollisionEntity
+[21Nov2026 04:29:37.083] [main/WARN] [mixin/]: Error loading class: com/lilypuree/connectiblechains/entity/ChainKnotEntity (java.lang.ClassNotFoundException: com.lilypuree.connectiblechains.entity.ChainKnotEntity)
+[21Nov2026 04:29:37.083] [main/WARN] [mixin/]: @Mixin target com.lilypuree.connectiblechains.entity.ChainKnotEntity was not found valkyrienskies-forge.mixins.json:compat.connectiblechains.MixinChainKnotEntity
+[21Nov2026 04:29:37.084] [main/WARN] [mixin/]: Error loading class: com/lilypuree/connectiblechains/chain/ChainLink (java.lang.ClassNotFoundException: com.lilypuree.connectiblechains.chain.ChainLink)
+[21Nov2026 04:29:37.084] [main/WARN] [mixin/]: @Mixin target com.lilypuree.connectiblechains.chain.ChainLink was not found valkyrienskies-forge.mixins.json:compat.connectiblechains.MixinChainLink
+[21Nov2026 04:29:37.085] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/kinetics/base/BlockBreakingKineticBlockEntity (java.lang.ClassNotFoundException: com.simibubi.create.content.kinetics.base.BlockBreakingKineticBlockEntity)
+[21Nov2026 04:29:37.085] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.kinetics.base.BlockBreakingKineticBlockEntity was not found valkyrienskies-forge.mixins.json:compat.create.MixinBlockBreakingKineticTileEntity
+[21Nov2026 04:29:37.086] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/contraptions/ControlledContraptionEntity (java.lang.ClassNotFoundException: com.simibubi.create.content.contraptions.ControlledContraptionEntity)
+[21Nov2026 04:29:37.086] [main/WARN] [mixin/]: @Mixin target com.simibubi.create.content.contraptions.ControlledContraptionEntity was not found valkyrienskies-forge.mixins.json:compat.create.MixinControlledContraptionEntity
+[21Nov2026 04:29:37.087] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/foundation/render/BlockEntityRenderHelper (java.lang.ClassNotFoundException: com.simibubi.create.foundation.render.BlockEntityRenderHelper)
+[21Nov2026 04:29:37.088] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/foundation/render/BlockEntityRenderHelper (java.lang.ClassNotFoundException: com.simibubi.create.foundation.render.BlockEntityRenderHelper)
+[21Nov2026 04:29:37.089] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/contraptions/glue/SuperGlueSelectionHandler (java.lang.ClassNotFoundException: com.simibubi.create.content.contraptions.glue.SuperGlueSelectionHandler)
+[21Nov2026 04:29:37.090] [main/WARN] [mixin/]: Error loading class: com/simibubi/create/content/contraptions/glue/SuperGlueSelectionHandler (java.lang.ClassNotFoundException: com.simibubi.create.content.contraptions.glue.SuperGlueSelectionHandler)
+[21Nov2026 04:29:37.091] [main/WARN] [mixin/]: Error loading class: net/mcreator/createstuffadditions/procedures/GrapplinWhiskChainsLineProcedure (java.lang.ClassNotFoundException: net.mcreator.createstuffadditions.procedures.GrapplinWhiskChainsLineProcedure)
+[21Nov2026 04:29:37.092] [main/WARN] [mixin/]: Error loading class: net/mcreator/createstuffadditions/procedures/GrapplinWhiskItemInHandTickProcedure (java.lang.ClassNotFoundException: net.mcreator.createstuffadditions.procedures.GrapplinWhiskItemInHandTickProcedure)
+[21Nov2026 04:29:37.093] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/common/gui/BlockEntityInventory (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.common.gui.BlockEntityInventory)
+[21Nov2026 04:29:37.094] [main/WARN] [mixin/]: Error loading class: org/cyclops/integrateddynamics/core/block/VoxelShapeComponents (java.lang.ClassNotFoundException: org.cyclops.integrateddynamics.core.block.VoxelShapeComponents)
+[21Nov2026 04:29:37.094] [main/WARN] [mixin/]: @Mixin target org.cyclops.integrateddynamics.core.block.VoxelShapeComponents was not found valkyrienskies-forge.mixins.json:compat.integrateddynamics.MixinVoxelShapeComponents
+[21Nov2026 04:29:37.094] [main/WARN] [mixin/]: Error loading class: mekanism/common/lib/radiation/RadiationManager (java.lang.ClassNotFoundException: mekanism.common.lib.radiation.RadiationManager)
+[21Nov2026 04:29:37.094] [main/WARN] [mixin/]: @Mixin target mekanism.common.lib.radiation.RadiationManager was not found valkyrienskies-forge.mixins.json:compat.mekanism.MixinRadiationManager
+[21Nov2026 04:29:37.095] [main/WARN] [mixin/]: Error loading class: dev/su5ed/mffs/network/ClientPacketHandler (java.lang.ClassNotFoundException: dev.su5ed.mffs.network.ClientPacketHandler)
+[21Nov2026 04:29:37.095] [main/WARN] [mixin/]: Error loading class: dev/su5ed/mffs/util/FrequencyGrid (java.lang.ClassNotFoundException: dev.su5ed.mffs.util.FrequencyGrid)
+[21Nov2026 04:29:37.096] [main/WARN] [mixin/]: Error loading class: me/desht/modularrouters/container/RouterMenu (java.lang.ClassNotFoundException: me.desht.modularrouters.container.RouterMenu)
+[21Nov2026 04:29:37.097] [main/WARN] [mixin/]: Error loading class: cofh/core/block/entity/TileCoFH (java.lang.ClassNotFoundException: cofh.core.block.entity.TileCoFH)
+[21Nov2026 04:29:37.098] [main/WARN] [mixin/]: Error loading class: twilightforest/world/components/chunkgenerators/ChunkGeneratorTwilight (java.lang.ClassNotFoundException: twilightforest.world.components.chunkgenerators.ChunkGeneratorTwilight)
+[21Nov2026 04:29:37.098] [main/WARN] [mixin/]: @Mixin target twilightforest.world.components.chunkgenerators.ChunkGeneratorTwilight was not found valkyrienskies-forge.mixins.json:compat.twilightforest.ChunkGeneratorTwilightMixin
+[21Nov2026 04:29:37.138] [main/ERROR] [mixin/]: valkyrienskies-common.mixins.json:feature.sculk.MixinVibrationSystemTicker: Interface mixin contains a non-public method! Found destWorldPos(Lnet/minecraft/world/level/gameevent/vibrations/VibrationInfo;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/world/phys/Vec3; in valkyrienskies-common.mixins.json:feature.sculk.MixinVibrationSystemTicker
+org.spongepowered.asm.mixin.transformer.throwables.InvalidInterfaceMixinException: Interface mixin contains a non-public method! Found destWorldPos(Lnet/minecraft/world/level/gameevent/vibrations/VibrationInfo;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/world/phys/Vec3; in valkyrienskies-common.mixins.json:feature.sculk.MixinVibrationSystemTicker
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorInterface.prepareMethod(MixinPreProcessorInterface.java:65) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.prepare(MixinPreProcessorStandard.java:187) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo$State.validate(MixinInfo.java:322) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.validate(MixinInfo.java:913) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinConfig.postInitialise(MixinConfig.java:801) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.prepareConfigs(MixinProcessor.java:567) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.select(MixinProcessor.java:462) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.checkSelect(MixinProcessor.java:438) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:290) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar%2365!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar%2355!/:10.0.9+10.0.9+main.dcd20f30]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:637) ~[?:?]
+	at java.lang.Class.forName(Class.java:547) ~[?:?]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler$DummyProvider.lambda$updateModuleReads$1(ImmediateWindowHandler.java:164) ~[fmlloader-1.20.1-47.4.20.jar%2369!/:1.0]
+	at java.util.Optional.map(Optional.java:260) ~[?:?]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler$DummyProvider.updateModuleReads(ImmediateWindowHandler.java:164) ~[fmlloader-1.20.1-47.4.20.jar%2369!/:1.0]
+	at net.minecraftforge.fml.loading.ImmediateWindowHandler.acceptGameLayer(ImmediateWindowHandler.java:89) ~[fmlloader-1.20.1-47.4.20.jar%2369!/:1.0]
+	at net.minecraftforge.fml.loading.FMLLoader.beforeStart(FMLLoader.java:216) ~[fmlloader-1.20.1-47.4.20.jar%2369!/:1.0]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.launchService(CommonLaunchHandler.java:92) ~[fmlloader-1.20.1-47.4.20.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[21Nov2026 04:29:37.165] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[21Nov2026 04:29:41.681] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.20, for MC 1.20.1 with MCP 20230612.114412
+[21Nov2026 04:29:41.681] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.20 Initialized
+[21Nov2026 04:29:41.890] [modloading-worker-0/INFO] [thedarkcolour.kotlinforforge.test.KotlinForForge/]: Kotlin For Forge Enabled!
+[21Nov2026 04:29:42.559] [modloading-worker-0/INFO] [org.valkyrienskies.mod.platform.VSCoreProviderImpl/]: Initialized VSCore on Forge!
+[21Nov2026 04:29:42.905] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /home/runner/work/_temp/smoke-eureka-1.6.3/config/smoothsailing-common.toml is not correct. Correcting
+[21Nov2026 04:29:42.906] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.907] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics.forceGuard was corrected from null to its default, true. 
+[21Nov2026 04:29:42.907] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics.maxAcceleration was corrected from null to its default, 1000.0. 
+[21Nov2026 04:29:42.907] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics.buoyancyGuard was corrected from null to its default, true. 
+[21Nov2026 04:29:42.907] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics.maxBuoyantFactor was corrected from null to its default, 0.0. 
+[21Nov2026 04:29:42.907] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics.exceptionShield was corrected from null to its default, true. 
+[21Nov2026 04:29:42.907] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key physics.mainThreadMessages was corrected from null to its default, true. 
+[21Nov2026 04:29:42.909] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key sanitizer was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.909] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key sanitizer.enabled was corrected from null to its default, true. 
+[21Nov2026 04:29:42.909] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key sanitizer.intervalTicks was corrected from null to its default, 5. 
+[21Nov2026 04:29:42.909] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key sanitizer.warnOperators was corrected from null to its default, true. 
+[21Nov2026 04:29:42.910] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key assembly was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.910] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key assembly.noChunkLoading was corrected from null to its default, true. 
+[21Nov2026 04:29:42.910] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key assembly.skipFluids was corrected from null to its default, true. 
+[21Nov2026 04:29:42.910] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key assembly.unlimitedCap was corrected from null to its default, 131072. 
+[21Nov2026 04:29:42.910] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key assembly.cooldownTicks was corrected from null to its default, 20. 
+[21Nov2026 04:29:42.910] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key assembly.disassemblyHeightGuard was corrected from null to its default, true. 
+[21Nov2026 04:29:42.912] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key parts was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.912] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key parts.fixFloaterDoubleCount was corrected from null to its default, true. 
+[21Nov2026 04:29:42.912] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key parts.clampCounts was corrected from null to its default, true. 
+[21Nov2026 04:29:42.912] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key parts.autoRecount was corrected from null to its default, true. 
+[21Nov2026 04:29:42.912] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key parts.periodicRecountMinutes was corrected from null to its default, 10. 
+[21Nov2026 04:29:42.914] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engines was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.914] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engines.throttleStateUpdates was corrected from null to its default, true. 
+[21Nov2026 04:29:42.914] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engines.minTicksBetweenStateUpdates was corrected from null to its default, 10. 
+[21Nov2026 04:29:42.915] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engines.lightweightStateUpdates was corrected from null to its default, true. 
+[21Nov2026 04:29:42.916] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key helm was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.916] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key helm.dismountFix was corrected from null to its default, true. 
+[21Nov2026 04:29:42.916] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key helm.dismountMaxDrift was corrected from null to its default, 4.0. 
+[21Nov2026 04:29:42.916] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key helm.staleSeatCleanup was corrected from null to its default, true. 
+[21Nov2026 04:29:42.916] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key helm.menuValidation was corrected from null to its default, true. 
+[21Nov2026 04:29:42.916] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key helm.recreateMissingBlockEntities was corrected from null to its default, true. 
+[21Nov2026 04:29:42.917] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.917] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.wheelModelFix was corrected from null to its default, true. 
+[21Nov2026 04:29:42.918] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.rendererSafety was corrected from null to its default, true. 
+[21Nov2026 04:29:42.919] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key diagnostics was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.919] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key diagnostics.startupReport was corrected from null to its default, true. 
+[21Nov2026 04:29:42.923] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /home/runner/work/_temp/smoke-eureka-1.6.3/config/valkyrienskies/valkyrienskies-common.toml is not correct. Correcting
+[21Nov2026 04:29:42.923] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Advanced was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:42.923] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Advanced.renderPathfinding was corrected from null to its default, false. 
+[21Nov2026 04:29:43.339] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[21Nov2026 04:29:43.646] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.20 Target: 47.4.28
+[21Nov2026 04:29:43.976] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21Nov2026 04:29:44.010] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/runner/work/_temp/smoke-eureka-1.6.3/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23109!/assets/.mcassetsroot' uses unexpected schema
+[21Nov2026 04:29:44.010] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/runner/work/_temp/smoke-eureka-1.6.3/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23109!/data/.mcassetsroot' uses unexpected schema
+[21Nov2026 04:29:44.758] [main/ERROR] [net.minecraft.server.dedicated.DedicatedServerProperties/]: No key layers in MapLike[{}]
+[21Nov2026 04:29:45.694] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[21Nov2026 04:29:45.793] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1277 advancements
+[21Nov2026 04:29:46.153] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/aluminum' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/annealed_copper' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/beryllium' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/charcoal' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/cobalt' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/constantan' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/electrum' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/gallium' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/iridium' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/lead' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/lithium' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/magnetic_iron' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/neodymium' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/neutronium' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/nickel' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/opal' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/osmium' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/polyethylene' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/silver' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/tantalum' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/tin' doesn't exist!
+[21Nov2026 04:29:46.154] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/titanium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/uranium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/vanadium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/zinc' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_aluminum' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_beryllium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_cobalt' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_iridium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_lead' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_lithium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_magnetite' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_neodymium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_nickel' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_opal' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_osmium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_silver' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_tantalite' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_tin' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_titanium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_uranium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_vanadium' doesn't exist!
+[21Nov2026 04:29:46.155] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'forge:storage_blocks/raw_zinc' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'minecraft:carpets' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'hexcasting:slate_blocks' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'hexcasting:amethyst_blocks' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'immersive_weathering:leaf_piles' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'woodworks:leaf_piles' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'create:windmill_sails' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'create_vibrant_vaults:item_vaults' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'create_vibrant_vaults:shipping_containers' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_stairs' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_slab' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:cobbled_travertine' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:cobbled_travertine_stairs' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:cobbled_travertine_slab' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:mossy_cobbled_travertine' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:mossy_cobbled_travertine_stairs' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:mossy_cobbled_travertine_slab' doesn't exist!
+[21Nov2026 04:29:46.156] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:chiseled_travertine' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:polished_travertine' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:polished_travertine_stairs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:polished_travertine_slab' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:polished_travertine_wall' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_bricks' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:cracked_travertine_bricks' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_brick_stairs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_brick_slab' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_brick_wall' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:mossy_travertine_bricks' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:mossy_travertine_brick_stairs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:mossy_travertine_brick_slab' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:mossy_travertine_brick_wall' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_tiles' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:cracked_travertine_tiles' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_tile_stairs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_tile_slab' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:travertine_tile_wall' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:kaolin' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:kaolin_stairs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:kaolin_slabs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:kaolin_bricks' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:kaolin_brick_stairs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:kaolin_brick_slabs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:chalk' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:chalk_stairs' doesn't exist!
+[21Nov2026 04:29:46.157] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'natures_spirit:chalk_slabs' doesn't exist!
+[21Nov2026 04:29:46.158] [main/WARN] [org.valkyrienskies.mod.common.config.MassDatapackResolver/]: No specified tag 'simplest_compression:compressed_sand' doesn't exist!
+[21Nov2026 04:29:46.236] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[21Nov2026 04:29:46.236] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[21Nov2026 04:29:46.236] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[21Nov2026 04:29:46.237] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[21Nov2026 04:29:46.330] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[21Nov2026 04:29:46.349] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[21Nov2026 04:29:46.413] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21Nov2026 04:29:46.413] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[21Nov2026 04:29:46.413] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21Nov2026 04:29:46.413] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[21Nov2026 04:29:46.428] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/forge-server.toml is not correct. Correcting
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
+[21Nov2026 04:29:46.429] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
+[21Nov2026 04:29:46.453] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/valkyrienskies/vs_eureka.toml is not correct. Correcting
+[21Nov2026 04:29:46.453] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key allowDisassembly was corrected from null to its default, true. 
+[21Nov2026 04:29:46.455] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key allowFloatersAndBalloonsOnNonEurekaShips was corrected from null to its default, true. 
+[21Nov2026 04:29:46.456] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key antiVelocityMassRelevance was corrected from null to its default, 0.8. 
+[21Nov2026 04:29:46.456] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key ballastNoWeight was corrected from null to its default, 1000.0. 
+[21Nov2026 04:29:46.458] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key ballastWeight was corrected from null to its default, 10000.0. 
+[21Nov2026 04:29:46.459] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key balloonElevationMaxSpeed was corrected from null to its default, 5.5. 
+[21Nov2026 04:29:46.460] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key baseImpulseDescendRate was corrected from null to its default, 4.0. 
+[21Nov2026 04:29:46.461] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key baseImpulseElevationRate was corrected from null to its default, 2.0. 
+[21Nov2026 04:29:46.461] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key diagonals was corrected from null to its default, true. 
+[21Nov2026 04:29:46.462] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key disassemblingTimeUntilForced was corrected from null to its default, 1000. 
+[21Nov2026 04:29:46.463] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key doFluidDrag was corrected from null to its default, false. 
+[21Nov2026 04:29:46.464] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key elevationSnappiness was corrected from null to its default, 1.0. 
+[21Nov2026 04:29:46.465] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineBoost was corrected from null to its default, 0.2. 
+[21Nov2026 04:29:46.466] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineBoostExponentialPower was corrected from null to its default, 1.0E-6. 
+[21Nov2026 04:29:46.467] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineBoostOffset was corrected from null to its default, 2.5. 
+[21Nov2026 04:29:46.468] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineFuelMultiplier was corrected from null to its default, 2.0. 
+[21Nov2026 04:29:46.469] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineFuelSaving was corrected from null to its default, false. 
+[21Nov2026 04:29:46.470] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineHeatChangeExponent was corrected from null to its default, 0.10000000149011612. 
+[21Nov2026 04:29:46.471] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineHeatGain was corrected from null to its default, 0.029999999329447746. 
+[21Nov2026 04:29:46.472] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineHeatLoss was corrected from null to its default, 0.009999999776482582. 
+[21Nov2026 04:29:46.473] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineMinCapacity was corrected from null to its default, 2000. 
+[21Nov2026 04:29:46.473] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enginePowerAngular was corrected from null to its default, 1.0. 
+[21Nov2026 04:29:46.474] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enginePowerAngularMin was corrected from null to its default, 0.0. 
+[21Nov2026 04:29:46.475] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enginePowerLinear was corrected from null to its default, 500000.0. 
+[21Nov2026 04:29:46.477] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enginePowerLinearMin was corrected from null to its default, 10000.0. 
+[21Nov2026 04:29:46.478] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key engineRedstoneBehaviorPause was corrected from null to its default, false. 
+[21Nov2026 04:29:46.479] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key floaterBuoyantLift was corrected from null to its default, 2000.0. 
+[21Nov2026 04:29:46.480] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key linearBaseMass was corrected from null to its default, 50.0. 
+[21Nov2026 04:29:46.481] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key linearBaseSpeed was corrected from null to its default, 3.0. 
+[21Nov2026 04:29:46.482] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key linearMassScaling was corrected from null to its default, 2.0E-4. 
+[21Nov2026 04:29:46.483] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key linearMaxMass was corrected from null to its default, 10000.0. 
+[21Nov2026 04:29:46.483] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key linearStabilizeMaxAntiVelocity was corrected from null to its default, 1.0. 
+[21Nov2026 04:29:46.484] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key massPerBalloon was corrected from null to its default, 5000.0. 
+[21Nov2026 04:29:46.485] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key maxBalloonsPerEngine was corrected from null to its default, 0. 
+[21Nov2026 04:29:46.486] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key maxFloaterBuoyantFactor was corrected from null to its default, 0.1. 
+[21Nov2026 04:29:46.487] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key maxReverseSpeedFromEngines was corrected from null to its default, 5.0. 
+[21Nov2026 04:29:46.488] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key maxShipBlocks was corrected from null to its default, 32768. 
+[21Nov2026 04:29:46.489] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key maxSizeForTurnSpeedPenalty was corrected from null to its default, 16.0. 
+[21Nov2026 04:29:46.491] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key maxSpeedFromEngines was corrected from null to its default, 12.0. 
+[21Nov2026 04:29:46.492] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key passiveBalloonMaxHeight was corrected from null to its default, 400.0. 
+[21Nov2026 04:29:46.493] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key passiveBalloonMinHeight was corrected from null to its default, 64.0. 
+[21Nov2026 04:29:46.494] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key popSideBalloonChance was corrected from null to its default, 0.3. 
+[21Nov2026 04:29:46.496] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key scaledInstability was corrected from null to its default, 70.0. 
+[21Nov2026 04:29:46.497] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key speedMassScale was corrected from null to its default, 1.0. 
+[21Nov2026 04:29:46.498] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key stabilizationSpeed was corrected from null to its default, 10.0. 
+[21Nov2026 04:29:46.499] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key stabilizationTorqueConstant was corrected from null to its default, 15.0. 
+[21Nov2026 04:29:46.500] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key turnAcceleration was corrected from null to its default, 10.0. 
+[21Nov2026 04:29:46.501] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key turnSpeed was corrected from null to its default, 3.0. 
+[21Nov2026 04:29:46.502] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key unscaledInstability was corrected from null to its default, 0.1. 
+[21Nov2026 04:29:46.507] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/valkyrienskies/vs-core-server.toml is not correct. Correcting
+[21Nov2026 04:29:46.507] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Drag Settings was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.507] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Drag Settings.biasFactor was corrected from null to its default, 0.3. 
+[21Nov2026 04:29:46.507] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Drag Settings.dragCoefficient was corrected from null to its default, 2.18. 
+[21Nov2026 04:29:46.507] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Drag Settings.dragMultiplier was corrected from null to its default, 10.0. 
+[21Nov2026 04:29:46.507] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Drag Settings.enableDrag was corrected from null to its default, true. 
+[21Nov2026 04:29:46.508] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Drag Settings.enableLift was corrected from null to its default, true. 
+[21Nov2026 04:29:46.508] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Drag Settings.liftMultiplier was corrected from null to its default, 10.0. 
+[21Nov2026 04:29:46.508] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enableUdp was corrected from null to its default, false. 
+[21Nov2026 04:29:46.509] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.509] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.krunchIterations was corrected from null to its default, 1. 
+[21Nov2026 04:29:46.509] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.lodDetail was corrected from null to its default, 8192. 
+[21Nov2026 04:29:46.509] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.maxDePenetrationSpeed was corrected from null to its default, 10.0. 
+[21Nov2026 04:29:46.509] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.physicsBackend was corrected from null to its default, KRUNCH_CLASSIC. 
+[21Nov2026 04:29:46.510] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.physicsSpeed was corrected from null to its default, 1.0. 
+[21Nov2026 04:29:46.510] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.physicsSubSteps was corrected from null to its default, 20. 
+[21Nov2026 04:29:46.510] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.physicsThreads was corrected from null to its default, 0. 
+[21Nov2026 04:29:46.510] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.positionIterations was corrected from null to its default, 8. 
+[21Nov2026 04:29:46.510] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.shipLoadFreezeSeconds was corrected from null to its default, 5.0. 
+[21Nov2026 04:29:46.510] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Krunch Konfig.velocityIterations was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.510] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Physics Thread Settings was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.511] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Physics Thread Settings.physicsTicksPerGameTick was corrected from null to its default, 3. 
+[21Nov2026 04:29:46.511] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Physics Thread Settings.synchronizePhysics was corrected from null to its default, false. 
+[21Nov2026 04:29:46.511] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Physics Thread Settings.terrainBakingThreadPriority was corrected from null to its default, 5. 
+[21Nov2026 04:29:46.511] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Physics Thread Settings.terrainBakingThreads was corrected from null to its default, 0. 
+[21Nov2026 04:29:46.511] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Physics Thread Settings.terrainDeletionThreadPriority was corrected from null to its default, 4. 
+[21Nov2026 04:29:46.511] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Physics Thread Settings.terrainDeletionThreads was corrected from null to its default, 1. 
+[21Nov2026 04:29:46.512] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key shipLoadDistance was corrected from null to its default, 128.0. 
+[21Nov2026 04:29:46.513] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key shipUnloadDistance was corrected from null to its default, 196.0. 
+[21Nov2026 04:29:46.514] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Connectivity Settings (Experimental) was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.514] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Connectivity Settings (Experimental).enableBlockCornerConnectivity was corrected from null to its default, false. 
+[21Nov2026 04:29:46.514] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Connectivity Settings (Experimental).enableBlockEdgeConnectivity was corrected from null to its default, true. 
+[21Nov2026 04:29:46.514] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Connectivity Settings (Experimental).enableConnectivity was corrected from null to its default, false. 
+[21Nov2026 04:29:46.514] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Connectivity Settings (Experimental).enableSplitting was corrected from null to its default, false. 
+[21Nov2026 04:29:46.514] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Connectivity Settings (Experimental).enableWorldConnectivity was corrected from null to its default, false. 
+[21Nov2026 04:29:46.514] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Connectivity Settings (Experimental).verboseConnectivityLogging was corrected from null to its default, false. 
+[21Nov2026 04:29:46.515] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key udpPort was corrected from null to its default, 25565. 
+[21Nov2026 04:29:46.518] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/valkyrienskies/valkyrienskies-server.toml is not correct. Correcting
+[21Nov2026 04:29:46.518] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key CBC was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.518] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key CBC.shellRecoil was corrected from null to its default, false. 
+[21Nov2026 04:29:46.518] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key CBC.shellRecoilMult was corrected from null to its default, 500000.0. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.changeBackendCommandPerms was corrected from null to its default, 4. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.deleteShipCommandPerms was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.dryShipCommandPerms was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.getAirValuesPerms was corrected from null to its default, 0. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.getShipCommandPerms was corrected from null to its default, 0. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.remassShipCommandPerms was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.renameShipCommandPerms was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.scaleShipCommandPerms was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.519] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.setStaticShipCommandPerms was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.520] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Commands.teleportShipCommandPerms was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.520] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key ComputerCraft was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.520] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key ComputerCraft.canTurtlesLeaveScaledShips was corrected from null to its default, false. 
+[21Nov2026 04:29:46.521] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dynmap was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.521] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dynmap.showIconMarkers was corrected from null to its default, true. 
+[21Nov2026 04:29:46.521] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dynmap.showPolylineMarkers was corrected from null to its default, true. 
+[21Nov2026 04:29:46.521] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dynmap.showShipId was corrected from null to its default, true. 
+[21Nov2026 04:29:46.521] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dynmap.showShipMass was corrected from null to its default, true. 
+[21Nov2026 04:29:46.522] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key FTB Chunks was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.522] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key FTB Chunks.shipsProtectedByClaims was corrected from null to its default, true. 
+[21Nov2026 04:29:46.522] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key FTB Chunks.shipsProtectionOutOfBuildHeight was corrected from null to its default, false. 
+[21Nov2026 04:29:46.522] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Weather 2 was corrected from null to its default, SimpleCommentedConfig:{}. 
+[21Nov2026 04:29:46.522] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Weather 2.enableWeatherCompat was corrected from null to its default, true. 
+[21Nov2026 04:29:46.522] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Weather 2.stormDampening was corrected from null to its default, 0.0. 
+[21Nov2026 04:29:46.523] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Weather 2.stormRange was corrected from null to its default, 150.0. 
+[21Nov2026 04:29:46.523] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Weather 2.windMaxVel was corrected from null to its default, 20.0. 
+[21Nov2026 04:29:46.523] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Weather 2.windMultiplier was corrected from null to its default, 0.10000000149011612. 
+[21Nov2026 04:29:46.523] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key aiOnShips was corrected from null to its default, true. 
+[21Nov2026 04:29:46.524] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key allowMobSpawns was corrected from null to its default, true. 
+[21Nov2026 04:29:46.525] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key buoyancyFactorPerPocketVolume was corrected from null to its default, 0.05. 
+[21Nov2026 04:29:46.526] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key defaultBlockElasticity was corrected from null to its default, 0.3. 
+[21Nov2026 04:29:46.527] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key defaultBlockFriction was corrected from null to its default, 0.5. 
+[21Nov2026 04:29:46.527] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key defaultBlockHardness was corrected from null to its default, 1.0. 
+[21Nov2026 04:29:46.528] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key defaultBlockMass was corrected from null to its default, 1000.0. 
+[21Nov2026 04:29:46.529] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key defaultSplitGraceTimer was corrected from null to its default, 2. 
+[21Nov2026 04:29:46.530] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enableInteractDistanceChecks was corrected from null to its default, true. 
+[21Nov2026 04:29:46.531] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enableMovementChecks was corrected from null to its default, false. 
+[21Nov2026 04:29:46.532] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enablePocketBuoyancy was corrected from null to its default, false. 
+[21Nov2026 04:29:46.533] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enableWorldSplitting was corrected from null to its default, false. 
+[21Nov2026 04:29:46.533] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key explosionBlastForce was corrected from null to its default, 500000.0. 
+[21Nov2026 04:29:46.534] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key minScaling was corrected from null to its default, 0.25. 
+[21Nov2026 04:29:46.535] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key miniShipSize was corrected from null to its default, 0.5. 
+[21Nov2026 04:29:46.536] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key preventFluidEscapingShip was corrected from null to its default, true. 
+[21Nov2026 04:29:46.537] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key preventVinesEscapingShip was corrected from null to its default, true. 
+[21Nov2026 04:29:46.538] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key saveMobsPositionOnShip was corrected from null to its default, true. 
+[21Nov2026 04:29:46.538] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key teleportReconnectedPlayers was corrected from null to its default, true. 
+[21Nov2026 04:29:46.539] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key transformTeleports was corrected from null to its default, true. 
+[21Nov2026 04:29:46.560] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[21Nov2026 04:29:46.621] [Server thread/WARN] [mixin/]: Method overwrite conflict for getLevel in valkyrienskies-forge.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager, previously written by org.valkyrienskies.mod.mixin.feature.shipyard_entities.MixinPersistentEntitySectionManager. Skipping method.
+[21Nov2026 04:29:46.621] [Server thread/WARN] [mixin/]: Method overwrite conflict for setLevel in valkyrienskies-forge.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager, previously written by org.valkyrienskies.mod.mixin.feature.shipyard_entities.MixinPersistentEntitySectionManager. Skipping method.
+[21Nov2026 04:29:47.037] [Server thread/INFO] [org.valkyrienskies.core.impl.shadow.Fl/]: We are not using UDP, falling back to TCP
+[21Nov2026 04:29:47.561] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[21Nov2026 04:29:48.073] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[21Nov2026 04:29:48.074] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[21Nov2026 04:29:48.561] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 16%
+[21Nov2026 04:29:49.061] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 84%
+[21Nov2026 04:29:49.165] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1605 ms
+[21Nov2026 04:29:49.166] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (2.739s)! For help, type "help"
+[21Nov2026 04:29:49.179] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[21Nov2026 04:29:49.188] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Eureka 1.6.3 / Valkyrien Skies 2.4.11 / Eureka Tweaks not installed
+[21Nov2026 04:29:49.188] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Applied hooks so far: EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin
+[21Nov2026 04:29:49.189] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Note: Valkyrien Skies 2.4.11 has the helm-dismount teleport bug (Eureka #500) - dismount fix ON.
+[21Nov2026 04:29:49.191] [Server thread/INFO] [SmoothSailing/]: [SelfTest] starting; Eureka 1.6.3, VS 2.4.11
+[21Nov2026 04:29:50.116] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: SS_SelfTest[embedded] logged in with entity id 1 at (-7.5, -60.0, 5.5)
+[21Nov2026 04:29:50.141] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SS_SelfTest joined the game
+[21Nov2026 04:29:50.246] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player joined  (SS_SelfTest)
+[21Nov2026 04:29:50.683] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  structure placed  (helm at BlockPos{x=0, y=121, z=0})
+[21Nov2026 04:29:50.707] [Server thread/INFO] [org.valkyrienskies.eureka.util.ShipAssembler/]: Assembled ship with 54 blocks, out of 32768 allowed
+[21Nov2026 04:29:50.946] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly BFS guarded getBlockState  (calls 256)
+[21Nov2026 04:29:50.946] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly max-ship-blocks cap
+[21Nov2026 04:29:50.946] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm assemble
+[21Nov2026 04:29:50.946] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  assembly cooldown blocks an immediate second click
+[21Nov2026 04:29:51.038] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship loaded with Eureka controller  (ship 3 / gasoline-tulip-coffin)
+[21Nov2026 04:29:51.040] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  initial part counts  (helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+[21Nov2026 04:29:51.040] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm, floater and engine found on ship  (BlockPos{x=-28669952, y=127, z=12290047} BlockPos{x=-28669954, y=127, z=12290047} BlockPos{x=-28669950, y=127, z=12290047})
+[21Nov2026 04:29:55.394] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: physTick wrapped  (ticks 261)
+[21Nov2026 04:29:55.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: applyWorldForce guarded
+[21Nov2026 04:29:55.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: setBuoyantFactor guarded
+[21Nov2026 04:29:55.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: balloon force guarded
+[21Nov2026 04:29:55.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize torque guarded
+[21Nov2026 04:29:55.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize force guarded
+[21Nov2026 04:29:55.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm tick housekeeping
+[21Nov2026 04:29:55.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship position is finite  (( 6.293E-1  1.214E+2  5.787E-1))
+[21Nov2026 04:29:55.744] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  control: unpatched Eureka double-counts a powered floater (bug reproduced)  (powered=-15 (correct is 0), unpowered=15)
+[21Nov2026 04:29:55.894] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  powered floater count with the fix (expect 0)  (floaters=0)
+[21Nov2026 04:29:55.895] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: floater duplicate delta dropped
+[21Nov2026 04:29:56.044] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  unpowered floater count back to 15  (floaters=15)
+[21Nov2026 04:29:56.645] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  negative balloon count gives zero lift, not negative lift  (33 ticks zeroed)
+[21Nov2026 04:29:56.645] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] Corrected Eureka part counts of ship 3 (gasoline-tulip-coffin): [helms=1 balloons=-7 floaters=15 anchors=1 activeAnchors=0] -> [helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0]
+[21Nov2026 04:29:56.645] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  recount restores 15 balloons  (CORRECTED helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+[21Nov2026 04:29:56.645] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  second recount finds nothing to fix  (UNCHANGED)
+[21Nov2026 04:29:56.697] [Server thread/WARN] [SmoothSailing/]: [Smooth Sailing] EurekaConfig.elevationSnappiness was 0.0 - divides gravity; 0 gives NaN lift; clamped to 0.01. (If Eureka Tweaks set this, move its slider off the limit.)
+[21Nov2026 04:29:56.698] [Server thread/WARN] [SmoothSailing/]: [Smooth Sailing] EurekaConfig.maxSizeForTurnSpeedPenalty was 0.1 - below 0.5 Kotlin's coerceIn throws on the physics thread; clamped to 0.5. (If Eureka Tweaks set this, move its slider off the limit.)
+[21Nov2026 04:29:56.698] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  elevationSnappiness 0 -> >= 0.01  (now 0.01)
+[21Nov2026 04:29:56.699] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  maxSizeForTurnSpeedPenalty 0.1 -> 0.5  (now 0.5)
+[21Nov2026 04:30:04.844] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN hover force replaced with a finite one  (183 times)
+[21Nov2026 04:30:04.844] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship holds altitude like normal with snappiness 0 (unguarded: ~45 block drop)  (3 s with snappiness 0: -0.00 blocks, normal: -0.03 blocks)
+[21Nov2026 04:30:04.909] [Physics thread/WARN] [SmoothSailing/]: [Smooth Sailing] Dropped a non-finite Eureka torque at stabilize.applyInvariantTorque ((      NaN       NaN       NaN)).
+[21Nov2026 04:30:04.909] [Physics thread/WARN] [SmoothSailing/]: [Smooth Sailing] Dropped a non-finite Eureka force at stabilize.applyInvariantForce ((      NaN       NaN       NaN)). Usually a Eureka/Eureka Tweaks value is 0 or extreme.
+[21Nov2026 04:30:05.944] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN forces dropped  (63 dropped)
+[21Nov2026 04:30:05.944] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN torques dropped  (63 dropped)
+[21Nov2026 04:30:05.944] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship still finite after NaN config  (( 6.293E-1  1.180E+2  5.787E-1))
+[21Nov2026 04:30:05.944] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  sanitizer resets non-finite values to Eureka defaults
+[21Nov2026 04:30:05.994] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: engine heat state update
+[21Nov2026 04:30:06.059] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm use guard
+[21Nov2026 04:30:06.060] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player seated at helm  (ShipMountingEntity['entity.valkyrienskies.ship_mounting_entity'/2, l='ServerLevel[world]', x=-28669951.50, y=127.10, z=12290046.50])
+[21Nov2026 04:30:06.595] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: voluntary dismount recorded
+[21Nov2026 04:30:06.655] [Server thread/INFO] [SmoothSailing/]: [Smooth Sailing] SS_SelfTest left a helm and ended up 85.0 blocks from the seat; moved back to 0.5, 117.9, -0.5.
+[21Nov2026 04:30:06.794] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  dismount fix returned the player to the seat  (0.1 blocks away)
+[21Nov2026 04:30:07.144] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm menu stillValid
+[21Nov2026 04:30:07.149] [Server thread/WARN] [SmoothSailing/]: [Smooth Sailing] Block{vs_eureka:engine} at BlockPos{x=-28669950, y=127, z=12290047} had a wrong (FurnaceBlockEntity) block entity; created a new one so it no longer crashes when used.
+[21Nov2026 04:30:07.151] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  wrong-type engine block entity replaced instead of crashing  (set up wrong type: true)
+[21Nov2026 04:30:07.194] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship at y~120 may be disassembled
+[21Nov2026 04:30:09.294] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: disassembly guard
+[21Nov2026 04:30:09.294] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm is back in the world after disassembly
+[21Nov2026 04:30:09.344] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  all server mixins applied  (EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin)
+[21Nov2026 04:30:09.344] [Server thread/INFO] [SmoothSailing/]: [SelfTest] events so far: {blockEntity.recreated=1, dismount.teleportCorrected=1, engine.heatStateReconciled=1, parts.floaterDoubleCountPrevented=3, parts.negativeBalloonLiftZeroed=33, physics.nonFiniteForceDropped=63, physics.nonFiniteLiftReplaced=183, physics.nonFiniteTorqueDropped=63, recount.shipCorrected=1, sanitizer.valueClamped=2}
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Eureka: Smooth Sailing self-test
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Eureka 1.6.3 / Valkyrien Skies 2.4.11
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Applied mixins: EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] 
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player joined  (SS_SelfTest)
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  structure placed  (helm at BlockPos{x=0, y=121, z=0})
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly BFS guarded getBlockState  (calls 256)
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: assembly max-ship-blocks cap
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm assemble
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  assembly cooldown blocks an immediate second click
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship loaded with Eureka controller  (ship 3 / gasoline-tulip-coffin)
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  initial part counts  (helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm, floater and engine found on ship  (BlockPos{x=-28669952, y=127, z=12290047} BlockPos{x=-28669954, y=127, z=12290047} BlockPos{x=-28669950, y=127, z=12290047})
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: physTick wrapped  (ticks 261)
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: applyWorldForce guarded
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: setBuoyantFactor guarded
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: balloon force guarded
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize torque guarded
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: stabilize force guarded
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm tick housekeeping
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship position is finite  (( 6.293E-1  1.214E+2  5.787E-1))
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  control: unpatched Eureka double-counts a powered floater (bug reproduced)  (powered=-15 (correct is 0), unpowered=15)
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  powered floater count with the fix (expect 0)  (floaters=0)
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: floater duplicate delta dropped
+[21Nov2026 04:30:09.395] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  unpowered floater count back to 15  (floaters=15)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  negative balloon count gives zero lift, not negative lift  (33 ticks zeroed)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  recount restores 15 balloons  (CORRECTED helms=1 balloons=15 floaters=15 anchors=1 activeAnchors=0)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  second recount finds nothing to fix  (UNCHANGED)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  elevationSnappiness 0 -> >= 0.01  (now 0.01)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  maxSizeForTurnSpeedPenalty 0.1 -> 0.5  (now 0.5)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN hover force replaced with a finite one  (183 times)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship holds altitude like normal with snappiness 0 (unguarded: ~45 block drop)  (3 s with snappiness 0: -0.00 blocks, normal: -0.03 blocks)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN forces dropped  (63 dropped)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  NaN torques dropped  (63 dropped)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship still finite after NaN config  (( 6.293E-1  1.180E+2  5.787E-1))
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  sanitizer resets non-finite values to Eureka defaults
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: engine heat state update
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm use guard
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  test player seated at helm  (ShipMountingEntity['entity.valkyrienskies.ship_mounting_entity'/2, l='ServerLevel[world]', x=-28669951.50, y=127.10, z=12290046.50])
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: voluntary dismount recorded
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  dismount fix returned the player to the seat  (0.1 blocks away)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: helm menu stillValid
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  wrong-type engine block entity replaced instead of crashing  (set up wrong type: true)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  ship at y~120 may be disassembled
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  hook: disassembly guard
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  helm is back in the world after disassembly
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] PASS  all server mixins applied  (EngineBlockEntityMixin,EngineBlockMixin,EurekaShipControlMixin,FloaterBlockMixin,ShipAssemblerMixin,ShipHelmBlockEntityMixin,ShipHelmBlockMixin,ShipHelmScreenMenuMixin,StabilizeKtMixin)
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] 
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Hooks:
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   assembly.bfsGetBlockState = 256
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   assembly.maxShipBlocks = 514
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   dismount.recorded = 1
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   engine.heatStateUpdate = 3
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   engine.use = 1
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   floater.neighborChanged = 5
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.assemble = 1
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.disassemble = 1
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.menuStillValid = 12
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.tick = 382
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   helm.use = 1
+[21Nov2026 04:30:09.396] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.applyWorldForce = 971
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.balloonForce = 968
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.forceChecked = 2904
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.idealUpwardForce = 968
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.setBuoyantFactor = 968
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.stabilizeForce = 965
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.stabilizeTorque = 968
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.tick = 975
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   recount.run = 3
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest] Events:
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   blockEntity.recreated = 1
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   dismount.teleportCorrected = 1
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   engine.heatStateReconciled = 1
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   parts.floaterDoubleCountPrevented = 3
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   parts.negativeBalloonLiftZeroed = 33
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.nonFiniteForceDropped = 63
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.nonFiniteLiftReplaced = 183
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   physics.nonFiniteTorqueDropped = 63
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   recount.shipCorrected = 1
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest]   sanitizer.valueClamped = 2
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest] 
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: [SelfTest] RESULT: PASS (0 failure(s))
+[21Nov2026 04:30:09.397] [Server thread/INFO] [SmoothSailing/]: SMOOTHSAILING-SELFTEST RESULT: PASS
+[21Nov2026 04:30:09.399] [Server thread/WARN] [io.netty.channel.AbstractChannelHandlerContext/]: Failed to mark a promise as failure because it has succeeded already: DefaultChannelPromise@b1db56(success)
+java.lang.IllegalStateException: close() must be invoked after all flushed writes are handled.
+	at io.netty.channel.ChannelOutboundBuffer.close(ChannelOutboundBuffer.java:687) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.ChannelOutboundBuffer.close(ChannelOutboundBuffer.java:711) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:736) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.embedded.EmbeddedChannel$EmbeddedUnsafe$1.close(EmbeddedChannel.java:864) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.close(DefaultChannelPipeline.java:1352) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeClose(AbstractChannelHandlerContext.java:622) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.close(AbstractChannelHandlerContext.java:606) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.DefaultChannelPipeline.close(DefaultChannelPipeline.java:994) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.AbstractChannel.close(AbstractChannel.java:280) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.embedded.EmbeddedChannel.close(EmbeddedChannel.java:569) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.embedded.EmbeddedChannel.close(EmbeddedChannel.java:556) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at net.minecraft.network.Connection.m_129507_(Connection.java:297) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_9826_(ServerGamePacketListenerImpl.java:348) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.network.PacketSendListener$1.m_243096_(PacketSendListener.java:13) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.network.Connection.lambda$doSendPacket$9(Connection.java:228) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.82.Final.jar%2382!/:4.1.82.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.82.Final.jar%2382!/:4.1.82.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.82.Final.jar%2382!/:4.1.82.Final]
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:184) ~[netty-common-4.1.82.Final.jar%2382!/:4.1.82.Final]
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:95) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:30) ~[netty-transport-4.1.82.Final.jar%2385!/:4.1.82.Final]
+	at net.minecraft.network.Connection.m_243087_(Connection.java:226) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.network.Connection.m_129520_(Connection.java:210) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.network.Connection.m_243124_(Connection.java:189) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_9942_(ServerGamePacketListenerImpl.java:347) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at com.combatweevil886.smoothsailing.selftest.SelfTest.finish(SelfTest.java:235) ~[smoothsailing-1.0.0.jar%23106!/:1.0.0]
+	at com.combatweevil886.smoothsailing.selftest.SelfTest.tick(SelfTest.java:178) ~[smoothsailing-1.0.0.jar%23106!/:1.0.0]
+	at com.combatweevil886.smoothsailing.core.ServerEvents.onServerTick(ServerEvents.java:57) ~[smoothsailing-1.0.0.jar%23106!/:1.0.0]
+	at com.combatweevil886.smoothsailing.core.__ServerEvents_onServerTick_ServerTickEvent.invoke(.dynamic) ~[smoothsailing-1.0.0.jar%23106!/:1.0.0]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:55) ~[eventbus-6.2.33.jar%2352!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:312) ~[eventbus-6.2.33.jar%2352!/:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:298) ~[eventbus-6.2.33.jar%2352!/:?]
+	at net.minecraftforge.event.ForgeEventFactory.onPostServerTick(ForgeEventFactory.java:975) ~[forge-1.20.1-47.4.20-universal.jar%23114!/:?]
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:835) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23109!/:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21Nov2026 04:30:09.400] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SS_SelfTest lost connection: self-test done
+[21Nov2026 04:30:09.400] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SS_SelfTest left the game
+[21Nov2026 04:30:09.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[21Nov2026 04:30:09.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[21Nov2026 04:30:09.482] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[21Nov2026 04:30:09.485] [Physics thread/INFO] [(VS Core) Burger Factory/]: Deleting VSPhysicsPipelineStage resources!
+[21Nov2026 04:30:09.497] [Physics thread/WARN] [org.valkyrienskies.core.impl.shadow.FM/]: Physics pipeline ending
+[21Nov2026 04:30:09.503] [DefaultDispatcher-worker-3/INFO] [(VS Core) Burger Factory/]: VSPhysicsPipelineStage is fully deleted!
+[21Nov2026 04:30:10.096] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21Nov2026 04:30:10.463] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21Nov2026 04:30:10.464] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21Nov2026 04:30:10.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21Nov2026 04:30:10.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21Nov2026 04:30:10.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21Nov2026 04:30:10.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

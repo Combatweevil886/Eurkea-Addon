@@ -1,0 +1,101 @@
+
+#Guards around the forces Eureka applies on the Valkyrien Skies physics thread.
+[physics]
+	#Drop NaN/infinite forces and torques from Eureka before they reach the physics engine.
+	#A single NaN force can fling a ship to infinity, which loads absurd chunks and crashes the server.
+	forceGuard = true
+	#Largest acceleration (m/s^2) one Eureka force may cause; larger forces are scaled down.
+	#Normal Eureka flight stays far below 200. 0 disables the clamp (NaN filtering stays on).
+	#Range: 0.0 ~ 1.0E9
+	maxAcceleration = 1000.0
+	#Keep the floater buoyancy factor finite and never negative (negative = ship is pulled underwater).
+	buoyancyGuard = true
+	#Upper limit for the floater buoyancy factor. 0 = no upper limit.
+	#Range: 0.0 ~ 1000000.0
+	maxBuoyantFactor = 0.0
+	#Catch exceptions thrown by Eureka's per-ship physics tick so they cannot take the physics thread down.
+	#The failing ship skips that tick; the error is logged (rate limited).
+	exceptionShield = true
+	#Eureka sends the cruise on/off chat message from the physics thread. Move it to the server thread.
+	mainThreadMessages = true
+
+#Watches EurekaConfig (including values written by Eureka Tweaks) and clamps values that would make
+#the ship controller divide by zero or produce NaN, e.g. elevationSnappiness = 0 or linearMaxMass = 0.
+[sanitizer]
+	enabled = true
+	#How often (ticks) to re-check the values. Cheap: about 50 field reads.
+	#Range: 1 ~ 12000
+	intervalTicks = 5
+	#Tell online operators in chat (once per value) when something was clamped.
+	warnOperators = true
+
+#Ship assembly (helm 'Assemble' button).
+[assembly]
+	#Never load or generate chunks while searching for ship blocks; unloaded chunks count as air.
+	noChunkLoading = true
+	#Never pull fluid blocks (modded fluids included) or bubble columns into a ship.
+	#Eureka only blacklists vanilla water and lava, so a ship touching e.g. acid or a modded oil lake floods the search.
+	skipFluids = true
+	#Eureka's maxShipBlocks = 0 means 'no limit', which lets one click freeze the server.
+	#When Eureka's limit is 0 this cap is used instead. 0 = really unlimited.
+	#Range: > 0
+	unlimitedCap = 131072
+	#Ticks a player must wait between assemble attempts (each attempt scans up to maxShipBlocks blocks). 0 = off.
+	#Range: 0 ~ 1200
+	cooldownTicks = 20
+	#Refuse to disassemble a ship that sticks out above or below the world's build height (those blocks would be deleted).
+	disassemblyHeightGuard = true
+
+#Eureka keeps running counts of helms, balloons, floaters and anchors per ship. These options keep them honest.
+[parts]
+	#Eureka 1.6.x applies a floater's redstone change twice (once directly, once via the block update).
+	#A powered floater then pushes the count negative and the ship is dragged underwater. This removes the duplicate.
+	fixFloaterDoubleCount = true
+	#Treat a negative balloon count as zero when computing lift (the recount repairs the stored number).
+	clampCounts = true
+	#Recount the real parts on each ship shortly after it loads (fixes counts already broken in old saves).
+	autoRecount = true
+	#Re-run the recount for active ships every N minutes. 0 = only once per ship per server start.
+	#Range: 0 ~ 1440
+	periodicRecountMinutes = 10
+
+#Ship engines.
+[engines]
+	#Limit how often an engine may change its heat block state (light level + ship mesh update).
+	throttleStateUpdates = true
+	#Minimum ticks between two heat block-state changes of the same engine.
+	#Range: 0 ~ 1200
+	minTicksBetweenStateUpdates = 10
+	#Send heat changes to clients without neighbour/shape updates and without forcing a synchronous chunk re-render.
+	lightweightStateUpdates = true
+
+#Ship helms and seats.
+[helm]
+	#Valkyrien Skies 2.4.11 sometimes teleports a player far away (or back to where they sat down) when
+	#they leave a helm (Eureka issue #500), and can deal fall damage for the height the ship travelled.
+	#When a player sneaks off a helm and lands far from the seat, put them back next to it and clear the bogus fall distance.
+	dismountFix = true
+	#How far (blocks) from the seat a dismounted player may end up before the dismount fix moves them back.
+	#Range: 1.0 ~ 64.0
+	dismountMaxDrift = 4.0
+	#Forget the 'seated player' of a ship once they left the helm (Eureka keeps the reference forever).
+	staleSeatCleanup = true
+	#Close the helm menu when the helm is gone, so a stale menu can't assemble/disassemble remotely.
+	menuValidation = true
+	#Replace a wrong-type helm/engine block entity (left behind by another mod swapping blocks) instead of
+	#crashing with a ClassCastException when the block is used or broken.
+	recreateMissingBlockEntities = true
+
+#Client-only fixes (ignored on dedicated servers).
+[client]
+	#Eureka caches the helm wheel model from the first resource load and keeps the whole first model
+	#bakery alive forever. Look the model up from the live model manager instead (fixes stale wheels after F3+T and frees memory).
+	wheelModelFix = true
+	#Skip a helm wheel render instead of crashing when the block entity is in an unexpected state
+	#(Create contraptions, schematic previews, carried blocks).
+	rendererSafety = true
+
+[diagnostics]
+	#Log a short compatibility report (versions, known issues, active protections) at server start.
+	startupReport = true
+

@@ -1,0 +1,7 @@
+total 34952
+drwxr-xr-x 2 runner runner     4096 Nov 21 04:30 .
+drwxr-xr-x 4 runner runner     4096 Nov 21 04:30 ..
+-rw-r--r-- 1 runner runner   467753 Nov 21 04:30 eureka-1201-1.6.4.jar
+-rw-r--r-- 1 runner runner  7442998 Nov 21 04:30 kotlinforforge-4.12.0-all.jar
+-rw-r--r-- 1 runner runner   107322 Nov 21 04:30 smoothsailing-1.0.0.jar
+-rw-r--r-- 1 runner runner 27752937 Nov 21 04:30 valkyrienskies-120-2.4.11.jar
